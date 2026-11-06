@@ -1,0 +1,22 @@
+{
+  "description": "Drop your custom projects, images, and videos here. The site will automatically display your custom work!",
+  "projects": [
+    {
+      "slug": "sample-project",
+      "title": "Your Project Title",
+      "industry": "Branding & Web",
+      "services": ["UI/UX Design", "Web Development", "3D Motion"],
+      "summary": "Detailed description of your project, the strategy, design thinking, and impact.",
+      "quote": "Client testimonial or key highlight quote.",
+      "featuredImage": "/custom-projects/project-1-main.jpg",
+      "gallery": [
+        "/custom-projects/project-1-slide1.jpg",
+        "/custom-projects/project-1-slide2.jpg",
+        "/custom-projects/project-1-slide3.jpg",
+        "/custom-projects/project-1-slide4.jpg",
+        "/custom-projects/project-1-slide5.jpg",
+        "/custom-projects/project-1-slide6.jpg"
+      ]
+    }
+  ]
+}

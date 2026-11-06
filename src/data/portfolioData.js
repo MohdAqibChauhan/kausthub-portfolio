@@ -1,0 +1,2922 @@
+export const PORTFOLIO_DATA = {
+  "site": {
+    "title": "Griflan Labs",
+    "description": "A strategy-led design studio specializing in laying down the awesome sauce.",
+    "tagline": "Crafting Brands That Hit Hard",
+    "subtitle": "Branding + Web + Motion"
+  },
+  "news": [
+    "TinyFish raises $47 million in ICONIQ-led round",
+    "CogNito acquired by Plaid for $250M",
+    "Now booking projects for the new year",
+    "Everest launches with $140M in funding",
+    "Suzy Welch’s Values Bridge hits 65K users"
+  ],
+  "services": [
+    {
+      "id": "TdqFx30cSOifatJmCc9bKQ",
+      "slug": "branding",
+      "title": "Branding",
+      "items": [
+        {
+          "id": "YUgotIvrQ9a2cjschbXiRw",
+          "slug": "go-to-market-planning",
+          "title": "Illustration & Iconography"
+        },
+        {
+          "id": "VSOThjv9RLKKo87v2ppHNQ",
+          "slug": "data-sciene-analytics",
+          "title": "Photo Direction"
+        },
+        {
+          "id": "DTKgU0coRPmn2hLtWIkimg",
+          "slug": "brand-messaging",
+          "title": "Packaging"
+        },
+        {
+          "id": "AvUOfeR5RrivlsTAuSUM0w",
+          "slug": "research",
+          "title": "Copywriting & Content Creation"
+        },
+        {
+          "id": "N36iinC2RlylinJtVEE_FQ",
+          "slug": "branding-strategy",
+          "title": "Campaign"
+        },
+        {
+          "id": "QyeSHei2SFS6RqGAqkvJ9w",
+          "slug": "campaign-development-assets",
+          "title": "Design Systems & Guides"
+        },
+        {
+          "id": "bZN9X7XPShalhar-2HGuYw",
+          "slug": "visual-language-art-direction",
+          "title": "Naming"
+        },
+        {
+          "id": "VD0KcFwEQvGu0H-LY_dlPQ",
+          "slug": "consumer-insights-trends",
+          "title": "Logo Design"
+        },
+        {
+          "id": "MY6ZmadpTju_VsSyrQ3VWg",
+          "slug": "identity-positioning",
+          "title": "Brand Identity"
+        },
+        {
+          "id": "ZNp3luQFTiyITMkG85hFAg",
+          "slug": "product-service-vision",
+          "title": "Apparel"
+        }
+      ]
+    },
+    {
+      "id": "JlzVR3eYRXanbWG1SSNKzg",
+      "slug": "digital",
+      "title": "Digital",
+      "items": [
+        {
+          "id": "DS6Rmhb_SZG2F7wX3DUDRA",
+          "slug": "cms-implementation",
+          "title": "Content Management (CMS)"
+        },
+        {
+          "id": "UGSCcJWJTu-SU10GetnrIQ",
+          "slug": "information-architecture",
+          "title": "User Experience"
+        },
+        {
+          "id": "KAJFd2l4RSyX2I5ASaSN6g",
+          "slug": "content-strategy",
+          "title": "Content Strategy"
+        },
+        {
+          "id": "GlIQ16wvRqewgQjDqEjIaA",
+          "slug": "e-commerce",
+          "title": "E-commerce"
+        },
+        {
+          "id": "NDUiQ48zSuqJufsUziNHag",
+          "slug": "interface-design",
+          "title": "Web Development"
+        },
+        {
+          "id": "d3H66EGoSgu-TgKTTk4hHg",
+          "slug": "design-production-execution",
+          "title": "Web Design"
+        },
+        {
+          "id": "VrnvkiDpTOai7mn9xvr50g",
+          "slug": "user-experience",
+          "title": "Digital Strategy"
+        }
+      ]
+    },
+    {
+      "id": "eR_pYdXRSV-zG9PgBREnyQ",
+      "slug": "motion",
+      "title": "Motion",
+      "items": [
+        {
+          "id": "DGhKu56xSX2yB7dcXpO8Sg",
+          "slug": "3d-animation",
+          "title": "3D Animation"
+        },
+        {
+          "id": "DU3JhukFQP2kQlaJTTJ71g",
+          "slug": "animation",
+          "title": "2D Animation"
+        },
+        {
+          "id": "SwgDAR5wRQC3_GOnbqqJbw",
+          "slug": "iconography",
+          "title": "Motion Identity"
+        },
+        {
+          "id": "CIdtMkBxTP2JXhjkZDD_oA",
+          "slug": "motion-design",
+          "title": "Motion Design"
+        },
+        {
+          "id": "AOVmwfvaR_OHJBeghXeB8w",
+          "slug": "video",
+          "title": "Video "
+        },
+        {
+          "id": "btiHHV-aQ12jsilpGEfvhQ",
+          "slug": "story-boarding-and-style-development",
+          "title": "Story Boarding & Style Development"
+        }
+      ]
+    }
+  ],
+  "copy": {
+    "about": {
+      "title": "We are Griflan",
+      "paragraphs": [
+        "Griflan Labs is an experimental, bird’s-eye view of our work, a fresh way to show the range of brands, digital experiences, and products we create through the Griflan lens.",
+        "We work with companies that have something worth building, from emerging startups to established brands entering a new chapter. Every brand deserves its own story.",
+        "For a closer look at each brand, visit www.griflan.com."
+      ]
+    },
+    "contact": {
+      "title": "Big idea? You know where to find us.",
+      "paragraphs": [
+        "Schedule an introductory call to discuss your next idea and learn more about how we can help with your project.",
+        "To learn more about Griflan visit us at www.griflan.com."
+      ]
+    },
+    "links": [
+      {
+        "label": "856.816.6159",
+        "external": "tel:856.816.6159"
+      },
+      {
+        "label": "610.952.1398",
+        "external": "tel:610.952.1398"
+      },
+      {
+        "label": "hello@griflan.com",
+        "external": "mailto:hello@griflan.com"
+      },
+      {
+        "label": "Instagram",
+        "external": "https://www.instagram.com/griflan/"
+      },
+      {
+        "label": "Linkedin",
+        "external": "https://www.linkedin.com/company/griflan-design-inc/"
+      },
+      {
+        "label": "X",
+        "external": "https://x.com/Griflan"
+      }
+    ]
+  },
+  "works": [
+    {
+      "id": "S0_yOZAnT96kn2_ZorPphg",
+      "slug": "stax-ai",
+      "title": "Stax.ai",
+      "summary": "TPAs have been drowning in paper for decades. Stax.ai wanted to replace all of it with one AI-powered system, and needed a brand that embodied that rather than decorated it. We built the system: animation that makes automation understandable, illustration and 3D for credibility.",
+      "quote": null,
+      "industry": "SaaS",
+      "services": [
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "Story Boarding & Style Development",
+        "Video ",
+        "2D Animation",
+        "Illustration & Iconography"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1757271143-group-4818.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1757271143-group-4818.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3420,
+      "height": 2200,
+      "alt": "Large-scale mural featuring Stax.ai’s abstract wave form and brand tagline.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/drocpAai2rFKfnR1gogEXZ5QkoffUfHY/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/drocpAai2rFKfnR1gogEXZ5QkoffUfHY/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1920,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/drocpAai2rFKfnR1gogEXZ5QkoffUfHY/medium.mp4",
+          "hls": "https://stream.mux.com/drocpAai2rFKfnR1gogEXZ5QkoffUfHY.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757271143-group-2440.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757271143-group-2440.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3420,
+          "height": 2201,
+          "alt": "Mockups featuring Stax.ai’s mobile app dashboard and user flows.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757271143-group-2444.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757271143-group-2444.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1668,
+          "alt": "Blue linear wave illustration used as a background in Stax.ai’s identity system.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757371670-group-4905.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757371670-group-4905.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1669,
+          "height": 1668,
+          "alt": "Dark gradient screen with centered text UI element.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/2uy1uWyuxTP3NRWHrCD2rt4302bibXf900/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/2uy1uWyuxTP3NRWHrCD2rt4302bibXf900/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1488,
+          "height": 1586,
+          "alt": "",
+          "video": "https://stream.mux.com/2uy1uWyuxTP3NRWHrCD2rt4302bibXf900/medium.mp4",
+          "hls": "https://stream.mux.com/2uy1uWyuxTP3NRWHrCD2rt4302bibXf900.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757271143-group-4818.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757271143-group-4818.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3420,
+          "height": 2200,
+          "alt": "Large-scale mural featuring Stax.ai’s abstract wave form and brand tagline.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "U5AV8uFMSOG-GBZv2PsyKg",
+      "slug": "mailerbot",
+      "title": "Mailerbot",
+      "summary": "Mailerbot automates direct mail at scale: postcards, letters and invoices, created, personalised and sent through an API or a dashboard.",
+      "quote": null,
+      "industry": "B2C",
+      "services": [
+        "Web Design",
+        "User Experience",
+        "Digital Strategy",
+        "Web Development",
+        "Content Strategy",
+        "Logo Design",
+        "Motion Design",
+        "Illustration & Iconography",
+        "2D Animation",
+        "Content Management (CMS)"
+      ],
+      "src": "https://image.mux.com/qWQrPqQj402NfZfclsZN021uhgOy9zu6hq/thumbnail.jpg?time=1&width=1200",
+      "card": "https://image.mux.com/qWQrPqQj402NfZfclsZN021uhgOy9zu6hq/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+      "width": 2048,
+      "height": 1138,
+      "alt": "Mailerbot",
+      "video": "https://stream.mux.com/qWQrPqQj402NfZfclsZN021uhgOy9zu6hq/medium.mp4#t=1",
+      "hls": "https://stream.mux.com/qWQrPqQj402NfZfclsZN021uhgOy9zu6hq.m3u8#t=1",
+      "gallery": [
+        {
+          "src": "https://image.mux.com/qWQrPqQj402NfZfclsZN021uhgOy9zu6hq/thumbnail.jpg?time=1&width=1200",
+          "card": "https://image.mux.com/qWQrPqQj402NfZfclsZN021uhgOy9zu6hq/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 2048,
+          "height": 1138,
+          "alt": "",
+          "video": "https://stream.mux.com/qWQrPqQj402NfZfclsZN021uhgOy9zu6hq/medium.mp4#t=1",
+          "hls": "https://stream.mux.com/qWQrPqQj402NfZfclsZN021uhgOy9zu6hq.m3u8#t=1"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1789149663-mailerbot_brand.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1789149663-mailerbot_brand.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3186,
+          "height": 3222,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1786470009-macbook_air_08b.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1786470009-macbook_air_08b.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3000,
+          "height": 2250,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1789149663-mailerbot_brand-1.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1789149663-mailerbot_brand-1.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3186,
+          "height": 3222,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1786462212-mailerbot_postcard_editor.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1786462212-mailerbot_postcard_editor.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3182,
+          "height": 3598,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/cdmk00DOktNHQSY6mdIfGp801cP3OpH3Bh/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/cdmk00DOktNHQSY6mdIfGp801cP3OpH3Bh/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1558,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/cdmk00DOktNHQSY6mdIfGp801cP3OpH3Bh/medium.mp4",
+          "hls": "https://stream.mux.com/cdmk00DOktNHQSY6mdIfGp801cP3OpH3Bh.m3u8"
+        }
+      ]
+    },
+    {
+      "id": "F8-THR3XQTmIpq4Z8Hyilg",
+      "slug": "techspeed",
+      "title": "TechSpeed",
+      "summary": "TechSpeed had real talent behind a dated, cold identity — everything an all-women-led tech company shouldn't be. We started over: a new mark, a palette that reads capable and warm at once, custom animation, and a success-stories section that became their strongest conversion tool.",
+      "quote": "We have had 2X is growth since the launch of our new brand and wesbite.",
+      "industry": "Outsourcing",
+      "services": [
+        "Logo Design",
+        "Brand Identity",
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "2D Animation",
+        "Motion Design",
+        "Illustration & Iconography"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1760215601-techspeed-griflan.png?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1760215601-techspeed-griflan.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 2801,
+      "height": 1826,
+      "alt": "Techspeed abstract digital illustration with swirling copper lines on dark background.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/h6up7sK6H01eA1RwUCcEEDTpqhUd02g39I/thumbnail.jpg?time=2&width=1200",
+          "card": "https://image.mux.com/h6up7sK6H01eA1RwUCcEEDTpqhUd02g39I/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1638,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/h6up7sK6H01eA1RwUCcEEDTpqhUd02g39I/medium.mp4#t=2",
+          "hls": "https://stream.mux.com/h6up7sK6H01eA1RwUCcEEDTpqhUd02g39I.m3u8#t=2"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1760215601-techspeed-griflan.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760215601-techspeed-griflan.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2801,
+          "height": 1826,
+          "alt": "Techspeed abstract digital illustration with swirling copper lines on dark background.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759614354-techspeed-biz-card-closeup.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759614354-techspeed-biz-card-closeup.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1956,
+          "height": 2086,
+          "alt": "Techspeed business card mockups in purple and dark tones.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1760711087-group-5143.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760711087-group-5143.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1669,
+          "alt": "Purple background featuring “TS”.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759403205-women-wear-shirt-mockup-1.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759403205-women-wear-shirt-mockup-1.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1540,
+          "height": 2066,
+          "alt": "Woman wearing a Techspeed logo t-shirt in deep purple with clean, modern branding.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759403435-metro-poster1-copy.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759403435-metro-poster1-copy.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3000,
+          "height": 1656,
+          "alt": "Set of metro posters promoting Techspeed’s smart data solutions with vibrant gradient backgrounds.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "bQVwYVXfTiCefpa4s18d8g",
+      "slug": "rothfinder",
+      "title": "Rothfinder",
+      "summary": "RothFinder is the strategy and closing system for advisors who want to uncover opportunities faster, explain them clearly, and convert more clients.",
+      "quote": null,
+      "industry": "B2C",
+      "services": [
+        "Brand Identity",
+        "Web Design",
+        "User Experience",
+        "Digital Strategy",
+        "Content Strategy",
+        "Logo Design",
+        "Story Boarding & Style Development",
+        "Design Systems & Guides",
+        "Motion Design",
+        "Illustration & Iconography",
+        "Content Management (CMS)"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1786544232-rothfinder-thumb.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1786544232-rothfinder-thumb.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 2758,
+      "height": 2207,
+      "alt": "Rothfinder",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://www.datocms-assets.com/160733/1786544232-rothfinder-thumb.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1786544232-rothfinder-thumb.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2758,
+          "height": 2207,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1786544671-rothfinder-buckets.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1786544671-rothfinder-buckets.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3351,
+          "height": 1817,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790971218-rothfinder-numbers.gif?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790971218-rothfinder-numbers.gif?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1478,
+          "height": 1478,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/vHEDLWQKgfkGYnubNHmTegIKbPG01uma1/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/vHEDLWQKgfkGYnubNHmTegIKbPG01uma1/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1350,
+          "alt": "",
+          "video": "https://stream.mux.com/vHEDLWQKgfkGYnubNHmTegIKbPG01uma1/medium.mp4",
+          "hls": "https://stream.mux.com/vHEDLWQKgfkGYnubNHmTegIKbPG01uma1.m3u8"
+        },
+        {
+          "src": "https://image.mux.com/gN464fgadCzAW02vLEocK00VlKeqGbpGEZ/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/gN464fgadCzAW02vLEocK00VlKeqGbpGEZ/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1350,
+          "alt": "",
+          "video": "https://stream.mux.com/gN464fgadCzAW02vLEocK00VlKeqGbpGEZ/medium.mp4",
+          "hls": "https://stream.mux.com/gN464fgadCzAW02vLEocK00VlKeqGbpGEZ.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1786546064-20.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1786546064-20.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3500,
+          "height": 2333,
+          "alt": "",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "LMBmhPVjRoGeQtFM19DzZw",
+      "slug": "tinyfish",
+      "title": "TinyFish",
+      "summary": "TinyFish had AI agents deployed inside major companies and no brand to match them. We built one from scratch: a visual system, a motion language, and a character — a thoughtful, methodical tiny fish that became the face of the technology, and \"the shoal\" behind it.",
+      "quote": "TinyFish raises $47 million in ICONIQ-led round.",
+      "industry": "A.I.",
+      "services": [
+        "Logo Design",
+        "Brand Identity",
+        "Design Systems & Guides",
+        "Motion Identity",
+        "3D Animation",
+        "Illustration & Iconography",
+        "Apparel"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1760108286-group-2439.png?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1760108286-group-2439.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3421,
+      "height": 2201,
+      "alt": "Bright orange TinyFish brand lockup shown on a solid background.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/T6zJpB39oxgu2PJd0100GHWNPYVUjnd9xc/thumbnail.jpg?time=3&width=1200",
+          "card": "https://image.mux.com/T6zJpB39oxgu2PJd0100GHWNPYVUjnd9xc/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1920,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/T6zJpB39oxgu2PJd0100GHWNPYVUjnd9xc/medium.mp4#t=3",
+          "hls": "https://stream.mux.com/T6zJpB39oxgu2PJd0100GHWNPYVUjnd9xc.m3u8#t=3"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1760106946-group-5079.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760106946-group-5079.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1669,
+          "height": 1669,
+          "alt": "Orange circular TinyFish logo mark representing energy and flow.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1760106947-group-5071.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760106947-group-5071.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1669,
+          "height": 1669,
+          "alt": "Artistic texture used in TinyFish’s visual identity inspired by underwater movement.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1760106948-group-4905.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760106948-group-4905.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1669,
+          "height": 1669,
+          "alt": "Smartphone mockup displaying TinyFish’s responsive web interface and layout.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1760106943-group-5073.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760106943-group-5073.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1669,
+          "height": 1669,
+          "alt": "Bright yellow background featuring animated TinyFish logo mark.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/Vc3brS801bCZbB84HoiG2pByO6delen8s/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/Vc3brS801bCZbB84HoiG2pByO6delen8s/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/Vc3brS801bCZbB84HoiG2pByO6delen8s/medium.mp4",
+          "hls": "https://stream.mux.com/Vc3brS801bCZbB84HoiG2pByO6delen8s.m3u8"
+        }
+      ]
+    },
+    {
+      "id": "WKDC_VqTRxicx1okbcSYug",
+      "slug": "upshop",
+      "title": "Upshop",
+      "summary": "We built Upshop's first brand and have been their partners ever since. As they grew into Upshop 360, the original identity started feeling too small. We sharpened it: new strategy, reimagined typography, motion that carries the story, and a site that moves as fast as the business.",
+      "quote": "Through thick and thin, they are Upshop's go-to for brand + digital.",
+      "industry": "SaaS",
+      "services": [
+        "Brand Identity",
+        "Design Systems & Guides",
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "Video ",
+        "3D Animation",
+        "Motion Identity",
+        "Photo Direction"
+      ],
+      "src": "https://image.mux.com/xeJ4rATXERHuSR3N8xt01M6CPOabHYOdc/thumbnail.jpg?time=0&width=1080",
+      "card": "https://image.mux.com/xeJ4rATXERHuSR3N8xt01M6CPOabHYOdc/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+      "width": 1080,
+      "height": 1080,
+      "alt": "Upshop",
+      "video": "https://stream.mux.com/xeJ4rATXERHuSR3N8xt01M6CPOabHYOdc/medium.mp4",
+      "hls": "https://stream.mux.com/xeJ4rATXERHuSR3N8xt01M6CPOabHYOdc.m3u8",
+      "gallery": [
+        {
+          "src": "https://www.datocms-assets.com/160733/1757100391-macbook_air_08-3.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757100391-macbook_air_08-3.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3377,
+          "height": 2200,
+          "alt": "Laptop displaying Upshop platform UI in a dim ambient setting.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/xeJ4rATXERHuSR3N8xt01M6CPOabHYOdc/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/xeJ4rATXERHuSR3N8xt01M6CPOabHYOdc/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/xeJ4rATXERHuSR3N8xt01M6CPOabHYOdc/medium.mp4",
+          "hls": "https://stream.mux.com/xeJ4rATXERHuSR3N8xt01M6CPOabHYOdc.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1760709939-group-5132.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760709939-group-5132.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1669,
+          "alt": "Uphop brand logo centered on a deep teal background.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1756892980-upshop-image-3.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1756892980-upshop-image-3.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1669,
+          "alt": "Smartphone mockups showcasing Upshop’s app interface and visual identity system.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1756892980-upshop-image-4.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1756892980-upshop-image-4.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1669,
+          "alt": "Laptop mockup featuring Upshop’s “Fresh Start” campaign landing page designed by Griflan.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1756892980-upshop-image-16.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1756892980-upshop-image-16.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3420,
+          "height": 2201,
+          "alt": "Dashboard and component design showcasing Upshop’s refreshed digital experience.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "e63HjtvYS3KdkoCPUAqtLg",
+      "slug": "in-revenue-capital",
+      "title": "In Revenue Capital",
+      "summary": "In Revenue Capital needed to look expert without being intimidating. We built the brand and the site on a less-is-more philosophy: flat but immersive, big imagery, generous white space, custom illustration, and an insights blog they still run today.",
+      "quote": null,
+      "industry": "Venture Capital",
+      "services": [
+        "Logo Design",
+        "Brand Identity",
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "Motion Design",
+        "Illustration & Iconography"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1761856774-group-22-copy-2.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1761856774-group-22-copy-2.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3360,
+      "height": 2200,
+      "alt": "Wooden surface inside a workshop environment.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/IGqKbUm4TOw00EVTaVTjCjfMyni9Y0134e/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/IGqKbUm4TOw00EVTaVTjCjfMyni9Y0134e/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1666,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/IGqKbUm4TOw00EVTaVTjCjfMyni9Y0134e/medium.mp4",
+          "hls": "https://stream.mux.com/IGqKbUm4TOw00EVTaVTjCjfMyni9Y0134e.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1761860105-phones.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1761860105-phones.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 834,
+          "height": 834,
+          "alt": "Three smartphones showing blue-and-white mobile UI screens for a digital product.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790882975-in-revenue-brand.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790882975-in-revenue-brand.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1670,
+          "height": 1673,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1761919665-panelsb.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1761919665-panelsb.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 834,
+          "height": 834,
+          "alt": "Repeating geometric pattern showcasing In Revenue Capital’s color system and modern brand elements.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1761919569-colored.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1761919569-colored.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 834,
+          "height": 834,
+          "alt": "Primary and secondary color blocks representing the In Revenue Capital visual identity.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1761918171-inrevenue8.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1761918171-inrevenue8.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3364,
+          "height": 2204,
+          "alt": "Branded document titled “Insights,” showcasing print and digital collateral for In Revenue Capital.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "UkOTdMejSOqyXGi0vVBm6g",
+      "slug": "prosupps",
+      "title": "Prosupps",
+      "summary": "ProSupps had bold branding and premium products, and a digital presence that didn't match the energy. We built an immersive, effects-driven store — 3D visuals, ambassador video, nutrition in searchable HTML — then restructured the sales flow around discovery.",
+      "quote": null,
+      "industry": "E-Commerce",
+      "services": [
+        "E-commerce",
+        "Story Boarding & Style Development",
+        "Web Design",
+        "Web Development",
+        "Motion Design",
+        "Illustration & Iconography",
+        "3D Animation",
+        "Content Management (CMS)"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1761249300-frame-4239.png?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1761249300-frame-4239.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3392,
+      "height": 1668,
+      "alt": "Graphic highlighting ProSupps’ commitment to quality with “Substance Tested / Licensed Ingredients” text.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://www.datocms-assets.com/160733/1790883481-prosupps-site.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790883481-prosupps-site.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2194,
+          "height": 1438,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/3N029T7h02g029EHn001QSO6Xaw01Uz5unjtw/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/3N029T7h02g029EHn001QSO6Xaw01Uz5unjtw/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1920,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/3N029T7h02g029EHn001QSO6Xaw01Uz5unjtw/medium.mp4",
+          "hls": "https://stream.mux.com/3N029T7h02g029EHn001QSO6Xaw01Uz5unjtw.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790883351-prosupps-sample.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790883351-prosupps-sample.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1628,
+          "height": 1628,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790883693-prosupps-promise.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790883693-prosupps-promise.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2044,
+          "height": 1846,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790887208-jekyll.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790887208-jekyll.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2032,
+          "height": 1772,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/r01A3inNnP28OOUF3ESRYyVb4Ejhnt6GR/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/r01A3inNnP28OOUF3ESRYyVb4Ejhnt6GR/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1600,
+          "height": 1200,
+          "alt": "",
+          "video": "https://stream.mux.com/r01A3inNnP28OOUF3ESRYyVb4Ejhnt6GR/medium.mp4",
+          "hls": "https://stream.mux.com/r01A3inNnP28OOUF3ESRYyVb4Ejhnt6GR.m3u8"
+        }
+      ]
+    },
+    {
+      "id": "dxOwygctQ_CI4tKyxu81lw",
+      "slug": "new-engen",
+      "title": "New Engen",
+      "summary": "New Engen arrived with a fresh identity and a merger underway. We built the digital half: custom illustration, Rive animation, transitions engineered to feel like the genuine impact they promise, and one home for two companies. They took the toolkit and ran with it.",
+      "quote": "Engaged sessions are up 78% and Active users from organic sources are up 57%.",
+      "industry": "Marketing",
+      "services": [
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "2D Animation",
+        "Illustration & Iconography",
+        "Motion Design",
+        "Content Strategy",
+        "Digital Strategy"
+      ],
+      "src": "https://image.mux.com/cBsxF00II8c87392r4R4Df9jy68zah7Dj/thumbnail.jpg?time=0&width=1200",
+      "card": "https://image.mux.com/cBsxF00II8c87392r4R4Df9jy68zah7Dj/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+      "width": 1788,
+      "height": 1008,
+      "alt": "New Engen",
+      "video": "https://stream.mux.com/cBsxF00II8c87392r4R4Df9jy68zah7Dj/medium.mp4",
+      "hls": "https://stream.mux.com/cBsxF00II8c87392r4R4Df9jy68zah7Dj.m3u8",
+      "gallery": [
+        {
+          "src": "https://image.mux.com/cBsxF00II8c87392r4R4Df9jy68zah7Dj/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/cBsxF00II8c87392r4R4Df9jy68zah7Dj/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1788,
+          "height": 1008,
+          "alt": "",
+          "video": "https://stream.mux.com/cBsxF00II8c87392r4R4Df9jy68zah7Dj/medium.mp4",
+          "hls": "https://stream.mux.com/cBsxF00II8c87392r4R4Df9jy68zah7Dj.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757692337-hero.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757692337-hero.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3421,
+          "height": 2201,
+          "alt": "Laptop showcasing a marketing platform interface on dark green background.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757618271-group-4909.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757618271-group-4909.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1669,
+          "height": 1669,
+          "alt": "Hexagonal icon graphic showcasing New Engen’s design system.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757618271-group-4884.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757618271-group-4884.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1669,
+          "height": 1669,
+          "alt": "mobile marketing shots emphasizing the New Engen visual identity and campaign tone.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757621245-group-4920.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757621245-group-4920.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1669,
+          "height": 1669,
+          "alt": "Acorn Creator Suite teal badge with acorn icon and rounded text.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/zMo5HD4iwsdbzZCRZiQyYHTuYAPztsAM/thumbnail.jpg?time=1&width=1200",
+          "card": "https://image.mux.com/zMo5HD4iwsdbzZCRZiQyYHTuYAPztsAM/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1666,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/zMo5HD4iwsdbzZCRZiQyYHTuYAPztsAM/medium.mp4#t=1",
+          "hls": "https://stream.mux.com/zMo5HD4iwsdbzZCRZiQyYHTuYAPztsAM.m3u8#t=1"
+        }
+      ]
+    },
+    {
+      "id": "QWwSUys0RwujmDTlUs50sA",
+      "slug": "suzy-welch",
+      "title": "Suzy Welch",
+      "summary": "Suzy Welch had a reputation and no brand to amplify it. We built the foundation, then an ecosystem of assessment platforms around it: Pi360, Compass Careers, Four Horsemen and the breakout Values Bridge. Not quizzes — real engines with intricate scoring and personal results.",
+      "quote": "We have had 65,000 users for the values bridge since 5 months of launch.",
+      "industry": "Education",
+      "services": [
+        "Logo Design",
+        "Brand Identity",
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "Design Systems & Guides",
+        "Illustration & Iconography",
+        "Video ",
+        "Motion Design"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1762195748-suzy.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1762195748-suzy.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3420,
+      "height": 2200,
+      "alt": "Portrait of Suzy Welch smiling in a warmly lit home environment.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/j202RR6P8aJ8cHVDpfBajAjYGh64Yz300x/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/j202RR6P8aJ8cHVDpfBajAjYGh64Yz300x/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1584,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/j202RR6P8aJ8cHVDpfBajAjYGh64Yz300x/medium.mp4",
+          "hls": "https://stream.mux.com/j202RR6P8aJ8cHVDpfBajAjYGh64Yz300x.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790884365-suzy-frame.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790884365-suzy-frame.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2160,
+          "height": 2160,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1762195887-group-5194.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1762195887-group-5194.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1668,
+          "alt": "Brown background displaying the “Suzy Welch” logo in cream serif lettering.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1762195887-group-5193.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1762195887-group-5193.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1668,
+          "alt": "Yellow background with centered serif monogram initials “SW.”",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1760471857-suzy-10.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760471857-suzy-10.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1669,
+          "height": 1669,
+          "alt": "Circular Suzy logo icon in warm orange tones.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790939664-suzy-3.gif?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790939664-suzy-3.gif?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2050,
+          "height": 1327,
+          "alt": "",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "QhNc4zUITqyUuKj0QUcS0A",
+      "slug": "everest-erp",
+      "title": "Everest ERP",
+      "summary": "Everest built an ERP for the AI era, not a legacy system with a fresh coat of paint, and nothing about their presence said so. We built the identity to carry it: typography that is technical and readable, animation that makes automation tangible, interfaces that show the real thing.",
+      "quote": "Everest emerges from stealth mode with a landmark $140 million funding.",
+      "industry": "SaaS",
+      "services": [
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "3D Animation",
+        "Illustration & Iconography",
+        "Motion Design",
+        "Digital Strategy"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1757790223-group-2439.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1757790223-group-2439.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3420,
+      "height": 2201,
+      "alt": "Upshop analytics dashboard displayed on a desktop monitor.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/SJ02R7Tmj3YIHzpI5lzKPzCip7JfAspTb/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/SJ02R7Tmj3YIHzpI5lzKPzCip7JfAspTb/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 2048,
+          "height": 1152,
+          "alt": "",
+          "video": "https://stream.mux.com/SJ02R7Tmj3YIHzpI5lzKPzCip7JfAspTb/medium.mp4",
+          "hls": "https://stream.mux.com/SJ02R7Tmj3YIHzpI5lzKPzCip7JfAspTb.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790970271-group-4936.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790970271-group-4936.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2173,
+          "height": 2173,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/ML1Y1N00V85Wetano6EHIEncZJzOK7Hbb/thumbnail.jpg?time=0&width=954",
+          "card": "https://image.mux.com/ML1Y1N00V85Wetano6EHIEncZJzOK7Hbb/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 954,
+          "height": 1260,
+          "alt": "",
+          "video": "https://stream.mux.com/ML1Y1N00V85Wetano6EHIEncZJzOK7Hbb/medium.mp4",
+          "hls": "https://stream.mux.com/ML1Y1N00V85Wetano6EHIEncZJzOK7Hbb.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757792797-group-4955.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757792797-group-4955.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1668,
+          "alt": "Green and gold layered abstract pattern used in Everest ERP’s visual branding.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757792401-group-4945.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757792401-group-4945.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1668,
+          "alt": "Dark-themed layout highlighting key performance metrics and user insights.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757790223-group-2439.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757790223-group-2439.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3420,
+          "height": 2201,
+          "alt": "Upshop analytics dashboard displayed on a desktop monitor.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "HK4w_iaRSWKUbFWJCOqT8Q",
+      "slug": "elevate",
+      "title": "Elevate",
+      "summary": "Elevate genuinely cares about their customers in an industry famous for fine print, and looked like everyone else in it. We warmed the whole thing up: approachable typography, custom illustration, an inviting palette, and a site built around the app they are proudest of.",
+      "quote": null,
+      "industry": "Home Warranty",
+      "services": [
+        "Logo Design",
+        "Brand Identity",
+        "Design Systems & Guides",
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "Story Boarding & Style Development",
+        "2D Animation",
+        "Motion Design",
+        "Illustration & Iconography"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1758709689-1-section-elevate.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1758709689-1-section-elevate.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3420,
+      "height": 2200,
+      "alt": "Full-color home illustration introducing Elevate’s identity and brand promise.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/7rC6V6GRY8WVtHNY3IDUN0273VpWpRP38/thumbnail.jpg?time=0&width=1100",
+          "card": "https://image.mux.com/7rC6V6GRY8WVtHNY3IDUN0273VpWpRP38/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1100,
+          "height": 746,
+          "alt": "",
+          "video": "https://stream.mux.com/7rC6V6GRY8WVtHNY3IDUN0273VpWpRP38/medium.mp4",
+          "hls": "https://stream.mux.com/7rC6V6GRY8WVtHNY3IDUN0273VpWpRP38.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759324493-group-5011.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759324493-group-5011.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1668,
+          "alt": "Elevate Homescriptions logo on a cream background.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1758709690-16-1739882346-elevate.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1758709690-16-1739882346-elevate.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3376,
+          "height": 2200,
+          "alt": "Desktop mockup highlighting service plan details and brand visuals.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759261778-group-4994.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759261778-group-4994.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3420,
+          "height": 2201,
+          "alt": "Mobile and desktop mockups featuring Elevate’s playful, illustrated web experience.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/66MGM4DcBJtRk3667YIIhInpR9c017J9l/thumbnail.jpg?time=0&width=800",
+          "card": "https://image.mux.com/66MGM4DcBJtRk3667YIIhInpR9c017J9l/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 800,
+          "height": 812,
+          "alt": "",
+          "video": "https://stream.mux.com/66MGM4DcBJtRk3667YIIhInpR9c017J9l/medium.mp4",
+          "hls": "https://stream.mux.com/66MGM4DcBJtRk3667YIIhInpR9c017J9l.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1758709689-1-section-elevate.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1758709689-1-section-elevate.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3420,
+          "height": 2200,
+          "alt": "Full-color home illustration introducing Elevate’s identity and brand promise.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "PS83d4UvRaSjQIqq46b5IQ",
+      "slug": "five-pathways",
+      "title": "Five Pathways",
+      "summary": "Five Pathways wanted retirement planning to feel like anything but. A hot air balloon guiding clients through five routes became the north star: an editorial illustration system, a virtual office where you meet the team, an animated AI assistant, and a claw machine that gives clients real gifts.",
+      "quote": "The experience has been beyond wonderful, and I view them as a partner in our company's growth strategy.",
+      "industry": "Finance",
+      "services": [
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "User Experience",
+        "2D Animation",
+        "Motion Design",
+        "Illustration & Iconography"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1759741468-five-group-5-copy.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1759741468-five-group-5-copy.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3360,
+      "height": 2200,
+      "alt": "Illustrated landing page with balloon motif representing Five Pathways’ guided planning process.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/AD2c9v01OOAB5t45sy00q5GFiK79ZMgydK/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/AD2c9v01OOAB5t45sy00q5GFiK79ZMgydK/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1670,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/AD2c9v01OOAB5t45sy00q5GFiK79ZMgydK/medium.mp4",
+          "hls": "https://stream.mux.com/AD2c9v01OOAB5t45sy00q5GFiK79ZMgydK.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759741468-five-group-5-copy.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759741468-five-group-5-copy.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2200,
+          "alt": "Illustrated landing page with balloon motif representing Five Pathways’ guided planning process.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759742172-five-fp4-1.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759742172-five-fp4-1.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2202,
+          "alt": "Printed brochures showcasing the Five Pathways identity system and brand message.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759742126-five-group-37.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759742126-five-group-37.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1626,
+          "height": 2200,
+          "alt": "Soft-toned image featuring branded packaging and collateral for Five Pathways.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/kKcC3aPOSadhjXpIjY67nB53ZicQTS25/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/kKcC3aPOSadhjXpIjY67nB53ZicQTS25/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1600,
+          "height": 2020,
+          "alt": "",
+          "video": "https://stream.mux.com/kKcC3aPOSadhjXpIjY67nB53ZicQTS25/medium.mp4",
+          "hls": "https://stream.mux.com/kKcC3aPOSadhjXpIjY67nB53ZicQTS25.m3u8"
+        },
+        {
+          "src": "https://image.mux.com/KgGUGvtLzjdaf9N02da2u6yJfKMK01RWA00/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/KgGUGvtLzjdaf9N02da2u6yJfKMK01RWA00/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1666,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/KgGUGvtLzjdaf9N02da2u6yJfKMK01RWA00/medium.mp4",
+          "hls": "https://stream.mux.com/KgGUGvtLzjdaf9N02da2u6yJfKMK01RWA00.m3u8"
+        }
+      ]
+    },
+    {
+      "id": "W008p2tJQoChTA6icFn0Ww",
+      "slug": "vvd",
+      "title": "Vincent Van Dough",
+      "summary": "Vincent Van Dough's collection deserved a gallery, not a feed. We built one that looks deceptively simple and is packed with detail: fluid transitions between pages, dark and light modes, and micro-interactions that reveal themselves as you explore.",
+      "quote": null,
+      "industry": "Art",
+      "services": [
+        "Brand Identity",
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1762203123-frame-4210.png?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1762203123-frame-4210.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 1735,
+      "height": 1100,
+      "alt": "Animated banner reading “Created. Collected.” showcasing VVD’s core tagline and kinetic design style.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/9ghx5iIAfKmtyafu7RQ138f02f1T6eAid/thumbnail.jpg?time=1&width=1200",
+          "card": "https://image.mux.com/9ghx5iIAfKmtyafu7RQ138f02f1T6eAid/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1672,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/9ghx5iIAfKmtyafu7RQ138f02f1T6eAid/medium.mp4#t=1",
+          "hls": "https://stream.mux.com/9ghx5iIAfKmtyafu7RQ138f02f1T6eAid.m3u8#t=1"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1762203286-left1.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1762203286-left1.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 856,
+          "height": 856,
+          "alt": "Grid of visuals from VVD’s digital portfolio showing diverse creative work.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1762203433-right1.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1762203433-right1.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 834,
+          "height": 855,
+          "alt": "Close-up of VVD website cards with clean black UI elements and white typography.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1762547544-vvd-griflan1.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1762547544-vvd-griflan1.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1657,
+          "height": 1711,
+          "alt": "White VVD text logo against a solid black background.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1762547563-vvd-griflan2.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1762547563-vvd-griflan2.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1657,
+          "height": 1711,
+          "alt": "Monochrome VVD wordmark displayed against subtle black texture.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1762203123-frame-4210.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1762203123-frame-4210.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1735,
+          "height": 1100,
+          "alt": "Animated banner reading “Created. Collected.” showcasing VVD’s core tagline and kinetic design style.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "YXzvbr__TyGRJ7MC1sP4dg",
+      "slug": "armadillo",
+      "title": "Armadillo",
+      "summary": "Armadillo had the platform and the ambition, and needed an identity for an industry that feels cold and transactional. Protection is what the animal is about, so the character carried everything — plus an illustration system, realtor materials, and a referral engine.",
+      "quote": "We experienced an exponential surge in client acquisition, skyrocketing from zero to thousands within a year of launching our brand.",
+      "industry": "Home Warranty",
+      "services": [
+        "Logo Design",
+        "Brand Identity",
+        "Design Systems & Guides",
+        "Web Design",
+        "Web Development",
+        "User Experience",
+        "Content Management (CMS)",
+        "2D Animation",
+        "Motion Design",
+        "Illustration & Iconography"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1762197310-armadillo-cover-new.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1762197310-armadillo-cover-new.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3420,
+      "height": 2200,
+      "alt": "Colorful illustrated scene featuring stylized characters and animals in a playful composition.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/NEYkCjjC01UicnxUV33i9a59pi01L3DOIK/thumbnail.jpg?time=2&width=1200",
+          "card": "https://image.mux.com/NEYkCjjC01UicnxUV33i9a59pi01L3DOIK/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1400,
+          "height": 914,
+          "alt": "",
+          "video": "https://stream.mux.com/NEYkCjjC01UicnxUV33i9a59pi01L3DOIK/medium.mp4#t=2",
+          "hls": "https://stream.mux.com/NEYkCjjC01UicnxUV33i9a59pi01L3DOIK.m3u8#t=2"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1762197310-armadillo-cover-new.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1762197310-armadillo-cover-new.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3420,
+          "height": 2200,
+          "alt": "Colorful illustrated scene featuring stylized characters and animals in a playful composition.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759499086-armadillo-screen1-2x.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759499086-armadillo-screen1-2x.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 4000,
+          "height": 2667,
+          "alt": "Armadillo wordmark displayed on a solid orange background.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759499099-armadillo-typgraphy.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759499099-armadillo-typgraphy.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1636,
+          "height": 2200,
+          "alt": "Armadillo typography poster in orange and yellow with bold messaging.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790970750-armadillo-screen3-2x.gif?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790970750-armadillo-screen3-2x.gif?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2042,
+          "height": 1882,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759499132-armadillo-screen14-2x.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759499132-armadillo-screen14-2x.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3354,
+          "height": 2200,
+          "alt": "Tablet layout showing Armadillo interface pages and feature views.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "KzaP6CgDSTSkf7X4oz-hgg",
+      "slug": "happyface",
+      "title": "HappyFace",
+      "summary": "Happy Face had a product people loved, influencer backing, and a brand doing none of it justice. We rebuilt it around the culture behind it: art-directed photoshoots, hemp packaging that stands out on a crowded shelf, and a social-first store built to convert.",
+      "quote": null,
+      "industry": "E-Commerce",
+      "services": [
+        "Logo Design",
+        "Brand Identity",
+        "Design Systems & Guides",
+        "Web Design",
+        "Web Development",
+        "E-commerce",
+        "Packaging",
+        "Illustration & Iconography",
+        "2D Animation"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1760452906-happyface.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1760452906-happyface.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3420,
+      "height": 2201,
+      "alt": "Close-up of Happy Face supplement jar with fruit ingredients and playful red packaging, showcasing bold consumer brand design.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://www.datocms-assets.com/160733/1760452906-happyface.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760452906-happyface.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3420,
+          "height": 2201,
+          "alt": "Close-up of Happy Face supplement jar with fruit ingredients and playful red packaging, showcasing bold consumer brand design.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759505701-happyface-screen1-2x.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759505701-happyface-screen1-2x.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2200,
+          "alt": "Yellow Happy Face wordmark displayed on solid background.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759505796-happyface-screen17-2x.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759505796-happyface-screen17-2x.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1640,
+          "height": 2200,
+          "alt": "Happy Face product photography with teal backdrop.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759505748-happyface-screen9-2x.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759505748-happyface-screen9-2x.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1640,
+          "height": 2200,
+          "alt": "Yellow card with colorful Happy Face icon variations.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759505708-happy-face-typography.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759505708-happy-face-typography.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1636,
+          "height": 2200,
+          "alt": "Happy Face homepage with gold lettering on dark background.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759505732-happyface-screen2-2x-1.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759505732-happyface-screen2-2x-1.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2200,
+          "alt": "Tablet displaying Happy Face website next to packaging and stationery.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "cRxYal7mRDeeuLQ20qtwlQ",
+      "slug": "dogelon-mars",
+      "title": "Dogelon Mars",
+      "summary": "Dogelon Mars had a passionate community and a brand full of personality, and wanted an experience to match the cosmic energy. We built the universe: otherworldly custom typography, storytelling made for exploring, and fluid animation that keeps the whole site alive.",
+      "quote": "Griflan’s work on Dogelon Mars brought credibility and authenticity to our long term goal of building community.",
+      "industry": "Blockchain",
+      "services": [
+        "Design Systems & Guides",
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "Motion Design"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1757266646-dogelon-4.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1757266646-dogelon-4.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3360,
+      "height": 2200,
+      "alt": "Smartphone displaying the Dogelon Mars interface over a Mars terrain background.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/UD3XtW4z02MS4wwMpeEKPeLGx4S01QF5XK/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/UD3XtW4z02MS4wwMpeEKPeLGx4S01QF5XK/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 2048,
+          "height": 1242,
+          "alt": "",
+          "video": "https://stream.mux.com/UD3XtW4z02MS4wwMpeEKPeLGx4S01QF5XK/medium.mp4",
+          "hls": "https://stream.mux.com/UD3XtW4z02MS4wwMpeEKPeLGx4S01QF5XK.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757266646-dogelon-4.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757266646-dogelon-4.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2200,
+          "alt": "Smartphone displaying the Dogelon Mars interface over a Mars terrain background.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757266921-dogelon-21.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757266921-dogelon-21.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2200,
+          "alt": "Logo design featuring Dogelon’s signature character within a red cosmic badge.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757267512-group-2442.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757267512-group-2442.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1669,
+          "alt": "Vibrant illustrated character in a dynamic pose, representing Dogelon Mars brand storytelling.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/lr3DqlI00UEH8RLcN8bntaBSUocOx01pMm/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/lr3DqlI00UEH8RLcN8bntaBSUocOx01pMm/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1920,
+          "alt": "",
+          "video": "https://stream.mux.com/lr3DqlI00UEH8RLcN8bntaBSUocOx01pMm/medium.mp4",
+          "hls": "https://stream.mux.com/lr3DqlI00UEH8RLcN8bntaBSUocOx01pMm.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1757266922-dogelon-8.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1757266922-dogelon-8.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2200,
+          "alt": "Laptop mockup showing multiple Dogelon Mars web screens with animated visuals.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "Zh-cW3clRH-qHWVn5BtTyw",
+      "slug": "dashq",
+      "title": "DashQ",
+      "summary": "DashQ needed everything from scratch: a brand that reads technically sophisticated and a site that makes an all-in-one leasing platform simple. The Q mark is a central square — the hub of data — with energy radiating out, and that grid carried into custom 3D animation.",
+      "quote": null,
+      "industry": "SaaS",
+      "services": [
+        "Logo Design",
+        "Brand Identity",
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "User Experience",
+        "Motion Identity",
+        "3D Animation",
+        "Illustration & Iconography",
+        "Video "
+      ],
+      "src": "https://www.datocms-assets.com/160733/1759888516-dashq-hero.png?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1759888516-dashq-hero.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3360,
+      "height": 2200,
+      "alt": "DashQ hero graphic with grid-based green symbol system.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/tvIr9NLtXkNAQLg1UbZLhz02o00LhDYn5Q/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/tvIr9NLtXkNAQLg1UbZLhz02o00LhDYn5Q/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1632,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/tvIr9NLtXkNAQLg1UbZLhz02o00LhDYn5Q/medium.mp4",
+          "hls": "https://stream.mux.com/tvIr9NLtXkNAQLg1UbZLhz02o00LhDYn5Q.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759888516-dashq-hero.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759888516-dashq-hero.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2200,
+          "alt": "DashQ hero graphic with grid-based green symbol system.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/81PJuI01Vope6TPbMNoPqWzLnEtvF5ygu/thumbnail.jpg?time=2&width=1200",
+          "card": "https://image.mux.com/81PJuI01Vope6TPbMNoPqWzLnEtvF5ygu/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1680,
+          "height": 1654,
+          "alt": "",
+          "video": "https://stream.mux.com/81PJuI01Vope6TPbMNoPqWzLnEtvF5ygu/medium.mp4#t=2",
+          "hls": "https://stream.mux.com/81PJuI01Vope6TPbMNoPqWzLnEtvF5ygu.m3u8#t=2"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759890161-group-31.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759890161-group-31.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1638,
+          "height": 2200,
+          "alt": "DashQ brand illustration featuring geometric green character artwork.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759890077-3b.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759890077-3b.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1638,
+          "height": 2200,
+          "alt": "Dashboard-style interface featuring progress rings and task widgets.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790879296-dash-q-brand.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790879296-dash-q-brand.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2480,
+          "height": 1600,
+          "alt": "",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "HlpRGa-9R8GpLLyY8kuw6A",
+      "slug": "mew",
+      "title": "Mew",
+      "summary": "Mew came to us with 50,000 followers and a cat standing up in a world of dog coins. We built the universe around it: custom type, a refined logo, spray-paint edges, every illustration animated, and a hub of shorts, comics and stickers. The following passed 200,000.",
+      "quote": "Our following has explode to over 200,000 and counting.",
+      "industry": "Blockchain",
+      "services": [
+        "Logo Design",
+        "Brand Identity",
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "2D Animation",
+        "Motion Design",
+        "Illustration & Iconography",
+        "Story Boarding & Style Development"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1762196381-mewnew.png?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1762196381-mewnew.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3420,
+      "height": 2200,
+      "alt": "Colorful illustrated scene featuring stylized characters and animals in a playful composition.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/8r7967AuxmK2KdsTEsy3GdgFyx7YNTap/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/8r7967AuxmK2KdsTEsy3GdgFyx7YNTap/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 2048,
+          "height": 1286,
+          "alt": "",
+          "video": "https://stream.mux.com/8r7967AuxmK2KdsTEsy3GdgFyx7YNTap/medium.mp4",
+          "hls": "https://stream.mux.com/8r7967AuxmK2KdsTEsy3GdgFyx7YNTap.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1758767230-13.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1758767230-13.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3376,
+          "height": 2200,
+          "alt": "Black t-shirt featuring MEW mascot illustration and brand design.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759328260-group-5026.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759328260-group-5026.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1669,
+          "alt": "Simplified red-on-white MEW wordmark representing the brand core.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1758767230-6b.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1758767230-6b.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3376,
+          "height": 2200,
+          "alt": "App interface mockups highlighting MEW’s bold UI and brand storytelling.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759327317-group-5029.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759327317-group-5029.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1669,
+          "height": 1669,
+          "alt": "Circular MEW logo with red background and black distressed detailing for brand merchandise.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1762196381-mewnew.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1762196381-mewnew.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3420,
+          "height": 2200,
+          "alt": "Colorful illustrated scene featuring stylized characters and animals in a playful composition.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "a5DTwBLnTDCHKiEIuN7LZQ",
+      "slug": "handwrytten",
+      "title": "Handwrytten",
+      "summary": "Robots with real pens, writing real notes at scale — the trick was making that feel authentic rather than uncanny. We refreshed the identity with animated robot arms, then designed the whole application: cards, handwriting, uploads, bulk sends. Around fifty screens.",
+      "quote": null,
+      "industry": "B2C",
+      "services": [
+        "Web Design",
+        "Story Boarding & Style Development"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1763145910-frame-7.png?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1763145910-frame-7.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 1803,
+      "height": 1100,
+      "alt": "Graphic combining line drawings, textures, and brand color palette.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://www.datocms-assets.com/160733/1763145910-frame-7.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1763145910-frame-7.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1803,
+          "height": 1100,
+          "alt": "Graphic combining line drawings, textures, and brand color palette.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/6vkZrNEvJkZIUJvuvUGM88w1DaTAbtqQ/thumbnail.jpg?time=0&width=1074",
+          "card": "https://image.mux.com/6vkZrNEvJkZIUJvuvUGM88w1DaTAbtqQ/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1074,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/6vkZrNEvJkZIUJvuvUGM88w1DaTAbtqQ/medium.mp4",
+          "hls": "https://stream.mux.com/6vkZrNEvJkZIUJvuvUGM88w1DaTAbtqQ.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1763146096-shirt1.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1763146096-shirt1.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 569,
+          "height": 569,
+          "alt": "Illustrated directional graphic printed on a white shirt mockup.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790937909-handwrytten-app.gif?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790937909-handwrytten-app.gif?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2200,
+          "height": 2200,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1763146096-shirt3.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1763146096-shirt3.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 569,
+          "height": 569,
+          "alt": "Playful illustration and directional arrows.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/ldRgQ0299ykHLwrQtGVKgjf8T94IZEaUg/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/ldRgQ0299ykHLwrQtGVKgjf8T94IZEaUg/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1782,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/ldRgQ0299ykHLwrQtGVKgjf8T94IZEaUg/medium.mp4",
+          "hls": "https://stream.mux.com/ldRgQ0299ykHLwrQtGVKgjf8T94IZEaUg.m3u8"
+        }
+      ]
+    },
+    {
+      "id": "XSXjQJ9JSlmrzwzc02Kg5A",
+      "slug": "brainsave",
+      "title": "Brainsave",
+      "summary": "BrainSave had an idea and needed it real enough to fund: an app that captures every memory across every digital touchpoint. We built the identity, the application design and a one-page site showing memories compile into a timeline. They raised $2 million after launch.",
+      "quote": "Since the launch, we've successfully raised over $2 million in additional funding.",
+      "industry": "A.I.",
+      "services": [
+        "Logo Design",
+        "Brand Identity",
+        "Design Systems & Guides",
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "User Experience",
+        "Motion Design",
+        "Motion Identity",
+        "3D Animation",
+        "Illustration & Iconography"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1759502951-brainsave-3.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1759502951-brainsave-3.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3360,
+      "height": 2001,
+      "alt": "Laptop displaying Brainsave interface with floating notification graphics.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/dPt8KWirRoEBOCSL01pmt6svV65DIBy5S/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/dPt8KWirRoEBOCSL01pmt6svV65DIBy5S/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1668,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/dPt8KWirRoEBOCSL01pmt6svV65DIBy5S/medium.mp4",
+          "hls": "https://stream.mux.com/dPt8KWirRoEBOCSL01pmt6svV65DIBy5S.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759502951-brainsave-3.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759502951-brainsave-3.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2001,
+          "alt": "Laptop displaying Brainsave interface with floating notification graphics.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/dTpNKpS8ip1HHojpVvgeKo5dCyGg00u01O/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/dTpNKpS8ip1HHojpVvgeKo5dCyGg00u01O/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/dTpNKpS8ip1HHojpVvgeKo5dCyGg00u01O/medium.mp4",
+          "hls": "https://stream.mux.com/dTpNKpS8ip1HHojpVvgeKo5dCyGg00u01O.m3u8"
+        },
+        {
+          "src": "https://image.mux.com/00XKIB02QJUv5EoGxHqOj321fkxjH00wip2/thumbnail.jpg?time=1&width=1080",
+          "card": "https://image.mux.com/00XKIB02QJUv5EoGxHqOj321fkxjH00wip2/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/00XKIB02QJUv5EoGxHqOj321fkxjH00wip2/medium.mp4#t=1",
+          "hls": "https://stream.mux.com/00XKIB02QJUv5EoGxHqOj321fkxjH00wip2.m3u8#t=1"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759502862-brainsave-2.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759502862-brainsave-2.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2001,
+          "alt": "Set of illuminated Brainsave logo icons on textured dark background.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/ahbtGVJtQl900ohUuBklP30046irgqnake/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/ahbtGVJtQl900ohUuBklP30046irgqnake/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1664,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/ahbtGVJtQl900ohUuBklP30046irgqnake/medium.mp4",
+          "hls": "https://stream.mux.com/ahbtGVJtQl900ohUuBklP30046irgqnake.m3u8"
+        }
+      ]
+    },
+    {
+      "id": "XWGd1DjTSZqXnTX634Dvmg",
+      "slug": "cly-del-manufacturing",
+      "title": "Cly-Del Manufacturing",
+      "summary": "Four generations, 140 employees, 3.5 billion precision parts a year — none of it visible online. We built a site that balances industrial strength with modern design: custom illustration of their capabilities, and a legacy page tracing the company from the 1800s.",
+      "quote": null,
+      "industry": "Manufacturing",
+      "services": [
+        "Design Systems & Guides",
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "User Experience",
+        "2D Animation"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1762545262-cly-del-1.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1762545262-cly-del-1.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3400,
+      "height": 2200,
+      "alt": "Worker operating machinery inside the Cly-Del manufacturing plant.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/acnZB6Px006cK43hgAZaz011G8lbtcK9YY/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/acnZB6Px006cK43hgAZaz011G8lbtcK9YY/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1666,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/acnZB6Px006cK43hgAZaz011G8lbtcK9YY/medium.mp4",
+          "hls": "https://stream.mux.com/acnZB6Px006cK43hgAZaz011G8lbtcK9YY.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1762545262-cly-del-1.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1762545262-cly-del-1.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3400,
+          "height": 2200,
+          "alt": "Worker operating machinery inside the Cly-Del manufacturing plant.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790971472-cly-del-retro-brand-board.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790971472-cly-del-retro-brand-board.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1254,
+          "height": 1254,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1761326319-cly-del-manufacturing-griflan-3.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1761326319-cly-del-manufacturing-griflan-3.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3400,
+          "height": 2200,
+          "alt": "Laptop showing Cly-Del website.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1761326336-cly-del-manufacturing-griflan-4.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1761326336-cly-del-manufacturing-griflan-4.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3420,
+          "height": 2200,
+          "alt": "Cly-Del machinery workstation with large-scale industrial equipment.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/HmIhkMZkzkjQSVavhb27BU02aCIMfx2ES/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/HmIhkMZkzkjQSVavhb27BU02aCIMfx2ES/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1658,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/HmIhkMZkzkjQSVavhb27BU02aCIMfx2ES/medium.mp4",
+          "hls": "https://stream.mux.com/HmIhkMZkzkjQSVavhb27BU02aCIMfx2ES.m3u8"
+        }
+      ]
+    },
+    {
+      "id": "BnM34zteR_mpgojoGasX0A",
+      "slug": "barrow-street",
+      "title": "Barrow Street Nursery School",
+      "summary": "Barrow Street needed a site sophisticated enough for discerning parents and playful enough to reflect the children in it. We centred the identity on their iconic building, drew an illustration style inspired by a child's own hand, and built admissions and a calendar behind it.",
+      "quote": null,
+      "industry": "Education",
+      "services": [
+        "Logo Design",
+        "Brand Identity",
+        "Design Systems & Guides",
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "Motion Design",
+        "Illustration & Iconography"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1762195051-summerhero.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1762195051-summerhero.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 1580,
+      "height": 1130,
+      "alt": "Childern sitting on a park bench, smiling together.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/Gm01SFDVbMj6QRAnZ6fPvaIBnwxtRoECe/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/Gm01SFDVbMj6QRAnZ6fPvaIBnwxtRoECe/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1758,
+          "height": 1080,
+          "alt": "Barrow Housing home page featuring community imagery and text.",
+          "video": "https://stream.mux.com/Gm01SFDVbMj6QRAnZ6fPvaIBnwxtRoECe/medium.mp4",
+          "hls": "https://stream.mux.com/Gm01SFDVbMj6QRAnZ6fPvaIBnwxtRoECe.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1762195051-summerhero.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1762195051-summerhero.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1580,
+          "height": 1130,
+          "alt": "Childern sitting on a park bench, smiling together.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1762195318-group-5186.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1762195318-group-5186.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1668,
+          "alt": "White background with simplified “Barrow Street” logo and house icon.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1761853055-barrow-10.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1761853055-barrow-10.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3354,
+          "height": 2200,
+          "alt": "Program booklets and collateral featuring Barrow’s warm visual identity.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1761852072-frame-4179w.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1761852072-frame-4179w.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 834,
+          "height": 834,
+          "alt": "Pastel illustration combining shapes and typography for brand materials.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1761852121-frame-4180q.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1761852121-frame-4180q.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 834,
+          "height": 834,
+          "alt": "Image of children playing outdoors.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "Q1CahCwkTnSq16g9OInS6g",
+      "slug": "hugo",
+      "title": "Hugo",
+      "summary": "Hugo blends people and AI to help businesses scale, and needed an identity that reads as a partner rather than an outsourcer. We built one around motion: a custom animated loader that shifts and changes colour as a living engine, and transitions that keep everything moving.",
+      "quote": "Since launching the new Hugo website, visitors are spending over two minutes on service pages, the bounce rate has dropped to 33%, and conversions are up to 6–7%.",
+      "industry": "Outsourcing",
+      "services": [
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "Content Strategy",
+        "2D Animation",
+        "Motion Design",
+        "Illustration & Iconography",
+        "Apparel"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1759496859-hugo2.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1759496859-hugo2.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3360,
+      "height": 2198,
+      "alt": "Desktop and mobile Hugo site mockups displayed on a white surface.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/00Ws02cDyMClQqAWCJzAmDu5R800xVfa86c/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/00Ws02cDyMClQqAWCJzAmDu5R800xVfa86c/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1672,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/00Ws02cDyMClQqAWCJzAmDu5R800xVfa86c/medium.mp4",
+          "hls": "https://stream.mux.com/00Ws02cDyMClQqAWCJzAmDu5R800xVfa86c.m3u8"
+        },
+        {
+          "src": "https://image.mux.com/B6vbCtzAE4dMrFlOR00HrX6CBc3hNcxOD/thumbnail.jpg?time=2&width=1200",
+          "card": "https://image.mux.com/B6vbCtzAE4dMrFlOR00HrX6CBc3hNcxOD/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 2048,
+          "height": 1280,
+          "alt": "Soft pastel logo reveal animation featuring the Hugo brand mark.",
+          "video": "https://stream.mux.com/B6vbCtzAE4dMrFlOR00HrX6CBc3hNcxOD/medium.mp4#t=2",
+          "hls": "https://stream.mux.com/B6vbCtzAE4dMrFlOR00HrX6CBc3hNcxOD.m3u8#t=2"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759496859-hugo2.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759496859-hugo2.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2198,
+          "alt": "Desktop and mobile Hugo site mockups displayed on a white surface.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759496949-hugo-hoodie.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759496949-hugo-hoodie.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1680,
+          "height": 2216,
+          "alt": "Yellow hoodie displaying the Hugo brand smiley-style logo.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790970434-hard-cover_yellow.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790970434-hard-cover_yellow.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1500,
+          "height": 1500,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759496930-hugo7.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759496930-hugo7.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2201,
+          "alt": "Stack of mobile screens showcasing Hugo app card layouts.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "d_3t8q4MSKOzr4GHuU2qFg",
+      "slug": "altgage",
+      "title": "Altgage",
+      "summary": "Altgage helps people save up to $100,000 over a thirty-year mortgage and had no visual identity to say so. We built one around custom illustration and a fresh palette — friendly enough to demystify mortgages, credible enough for a financial product — with calculators built in.",
+      "quote": null,
+      "industry": "Real Estate",
+      "services": [
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "Illustration & Iconography",
+        "Motion Design",
+        "2D Animation"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1759504471-altgage_5.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1759504471-altgage_5.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 1651,
+      "height": 1530,
+      "alt": "Money icons on soft green background.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/SF800sW00J84CpcwmZb4Fjxl00fQc1t5fDv/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/SF800sW00J84CpcwmZb4Fjxl00fQc1t5fDv/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1664,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/SF800sW00J84CpcwmZb4Fjxl00fQc1t5fDv/medium.mp4",
+          "hls": "https://stream.mux.com/SF800sW00J84CpcwmZb4Fjxl00fQc1t5fDv.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759504471-altgage_5.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759504471-altgage_5.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1651,
+          "height": 1530,
+          "alt": "Money icons on soft green background.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759696506-altgage-2a.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759696506-altgage-2a.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1651,
+          "height": 1080,
+          "alt": "Green polygon illustration used as an abstract data symbol.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759696506-altgage2b.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759696506-altgage2b.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1651,
+          "height": 1080,
+          "alt": "Triangle-shaped illustration representing data grouping or hierarchy.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759696506-altgage2c.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759696506-altgage2c.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1651,
+          "height": 1080,
+          "alt": "Circular illustration with soft pastel colors.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/Zh501eXjk6XA4asaa00ziGbvmLb4wuyphJ/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/Zh501eXjk6XA4asaa00ziGbvmLb4wuyphJ/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1662,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/Zh501eXjk6XA4asaa00ziGbvmLb4wuyphJ/medium.mp4",
+          "hls": "https://stream.mux.com/Zh501eXjk6XA4asaa00ziGbvmLb4wuyphJ.m3u8"
+        }
+      ]
+    },
+    {
+      "id": "V6mkesyUSg6xwKDtc9n7bA",
+      "slug": "open-home",
+      "title": "Open Home",
+      "summary": "OpenHome makes AI smart speakers you can personalise and deploy in a click, and needed a brand that gives a digital voice a personality. We built the system — colour, typography, the \"gem cons\" that became their signature — then interactive voice modules you can hear.",
+      "quote": null,
+      "industry": "A.I.",
+      "services": [
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "Motion Design",
+        "2D Animation",
+        "Illustration & Iconography"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1760208276-open-home-brand-griflan3.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1760208276-open-home-brand-griflan3.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3003,
+      "height": 1960,
+      "alt": "Open Home branding graphic featuring bold circular gradient shapes in purple and orange tones.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/QeBDpECJKlcKDu1Dkwmn4SmKg3DHkN01B/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/QeBDpECJKlcKDu1Dkwmn4SmKg3DHkN01B/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1600,
+          "height": 1200,
+          "alt": "",
+          "video": "https://stream.mux.com/QeBDpECJKlcKDu1Dkwmn4SmKg3DHkN01B/medium.mp4",
+          "hls": "https://stream.mux.com/QeBDpECJKlcKDu1Dkwmn4SmKg3DHkN01B.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790939221-open-home-brand-griflan3.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790939221-open-home-brand-griflan3.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1960,
+          "height": 1960,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759506714-3.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759506714-3.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3376,
+          "height": 2200,
+          "alt": "Laptop showing dark-mode dashboard with orange code interface.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/N54NAOCJHSvBAEyCxaJs5jxHDusG01nWv/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/N54NAOCJHSvBAEyCxaJs5jxHDusG01nWv/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1764,
+          "height": 1440,
+          "alt": "",
+          "video": "https://stream.mux.com/N54NAOCJHSvBAEyCxaJs5jxHDusG01nWv/medium.mp4",
+          "hls": "https://stream.mux.com/N54NAOCJHSvBAEyCxaJs5jxHDusG01nWv.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759506722-4.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759506722-4.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3376,
+          "height": 2200,
+          "alt": "Purple glowing UI pill button on a white tablet screen.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/sCV7bvL00JXXubWZ16F5YNHmJ02qRn8RTw/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/sCV7bvL00JXXubWZ16F5YNHmJ02qRn8RTw/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 2048,
+          "height": 1304,
+          "alt": "",
+          "video": "https://stream.mux.com/sCV7bvL00JXXubWZ16F5YNHmJ02qRn8RTw/medium.mp4",
+          "hls": "https://stream.mux.com/sCV7bvL00JXXubWZ16F5YNHmJ02qRn8RTw.m3u8"
+        }
+      ]
+    },
+    {
+      "id": "NVpNlTTdQ9GuuNi_9HK5Kg",
+      "slug": "portal",
+      "title": "Portal",
+      "summary": "Portal is building toward trust minimisation and peer-to-peer freedom, and their brand hadn't caught up. We reimagined it as an evolution: a waving flag as the motif — motion, freedom, the revolution they are pushing — with layered motion that turns complexity into discovery.",
+      "quote": null,
+      "industry": "Blockchain",
+      "services": [
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "2D Animation",
+        "3D Animation",
+        "Illustration & Iconography"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1760469680-frame-4177.png?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1760469680-frame-4177.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 2566,
+      "height": 1716,
+      "alt": "Portal neon sign glowing in purple and pink against a dark background.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/vpTf9XntoWLhwcdi01aV91FQmclmy3XfQ/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/vpTf9XntoWLhwcdi01aV91FQmclmy3XfQ/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1666,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/vpTf9XntoWLhwcdi01aV91FQmclmy3XfQ/medium.mp4",
+          "hls": "https://stream.mux.com/vpTf9XntoWLhwcdi01aV91FQmclmy3XfQ.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1760469680-frame-4177.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760469680-frame-4177.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2566,
+          "height": 1716,
+          "alt": "Portal neon sign glowing in purple and pink against a dark background.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1760465773-portal-2-1.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760465773-portal-2-1.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2357,
+          "alt": "Portal dark-mode interface displayed on a laptop with neon purple accents.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1760464647-portal-12.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760464647-portal-12.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2200,
+          "alt": "Portal multi-device collection featuring mobile, tablet, and desktop UI mockups.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1760467614-portal-20.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760467614-portal-20.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2200,
+          "alt": "Portal immersive display showing holographic product screens on a desk setup.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1760465594-frame-4170.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1760465594-frame-4170.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1668,
+          "alt": "Laptop displaying Portal’s futuristic neon UI with glowing holographic effects.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "FvHwfpAnRTuR2xrv_dSGdw",
+      "slug": "shardeum",
+      "title": "Shardeum",
+      "summary": "Shardeum had the rarest thing in crypto — a genuinely massive, engaged community — and a site that couldn't keep up. We built the visual system out of the name itself, with shards of the logo running through the whole thing, and a blog robust enough for their volume.",
+      "quote": null,
+      "industry": "Blockchain",
+      "services": [
+        "Web Design",
+        "Web Development",
+        "Content Management (CMS)",
+        "Illustration & Iconography",
+        "2D Animation"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1759743322-shardeum-1.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1759743322-shardeum-1.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 3360,
+      "height": 2202,
+      "alt": "Abstract 3D scene featuring the Shardeum logo surrounded by colorful geometric shapes, representing the brand’s modern digital identity and visual system.",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://www.datocms-assets.com/160733/1759743322-shardeum-1.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759743322-shardeum-1.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2202,
+          "alt": "Abstract 3D scene featuring the Shardeum logo surrounded by colorful geometric shapes, representing the brand’s modern digital identity and visual system.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759743521-shardeum-3.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759743521-shardeum-3.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2200,
+          "alt": "Street billboard featuring the Shardeum logo and campaign tagline.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/00e84udwdi00aSYGIWi4s8GBE9K202fY02et/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/00e84udwdi00aSYGIWi4s8GBE9K202fY02et/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/00e84udwdi00aSYGIWi4s8GBE9K202fY02et/medium.mp4",
+          "hls": "https://stream.mux.com/00e84udwdi00aSYGIWi4s8GBE9K202fY02et.m3u8"
+        },
+        {
+          "src": "https://image.mux.com/J322zd36k6WYHBRD3EoRJlLgh72VNy02W/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/J322zd36k6WYHBRD3EoRJlLgh72VNy02W/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/J322zd36k6WYHBRD3EoRJlLgh72VNy02W/medium.mp4",
+          "hls": "https://stream.mux.com/J322zd36k6WYHBRD3EoRJlLgh72VNy02W.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759743763-shardeum-5.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759743763-shardeum-5.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3360,
+          "height": 2200,
+          "alt": "Two smartphones displaying Shardeum’s product screens and app interface.",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1759951626-frame-4150.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1759951626-frame-4150.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1668,
+          "height": 1668,
+          "alt": "Laptop with a bright green and red interface on a neon pink background.",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "JCXY7yRPT7CaWq0j70qAyA",
+      "slug": "mindjoin",
+      "title": "MindJoin",
+      "summary": "MindJoin needed a brand that could make a pretty technical idea feel approachable without watering it down. We handled the branding, website design, and development, building a bold visual system around expressive illustration, oversized typography, and a lot of personality. The result feels smart, distinctive, and easy to remember.",
+      "quote": null,
+      "industry": "B2B",
+      "services": [
+        "Brand Identity",
+        "Web Design",
+        "Motion Identity",
+        "Motion Design",
+        "2D Animation",
+        "Content Strategy"
+      ],
+      "src": "https://image.mux.com/fWi9rc32ZjB3PVch022oI9uW3phiqIKnq/thumbnail.jpg?time=0&width=1200",
+      "card": "https://image.mux.com/fWi9rc32ZjB3PVch022oI9uW3phiqIKnq/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+      "width": 1600,
+      "height": 1200,
+      "alt": "MindJoin",
+      "video": "https://stream.mux.com/fWi9rc32ZjB3PVch022oI9uW3phiqIKnq/medium.mp4",
+      "hls": "https://stream.mux.com/fWi9rc32ZjB3PVch022oI9uW3phiqIKnq.m3u8",
+      "gallery": [
+        {
+          "src": "https://image.mux.com/jawQXdjZixiiXGRJbgV7Zab4yNvT3KbB/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/jawQXdjZixiiXGRJbgV7Zab4yNvT3KbB/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1658,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/jawQXdjZixiiXGRJbgV7Zab4yNvT3KbB/medium.mp4",
+          "hls": "https://stream.mux.com/jawQXdjZixiiXGRJbgV7Zab4yNvT3KbB.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790789759-screenshot-2026-09-30-at-1-35-42-pm.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790789759-screenshot-2026-09-30-at-1-35-42-pm.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2026,
+          "height": 2044,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790789473-screenshot-2026-09-30-at-1-30-52-pm.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790789473-screenshot-2026-09-30-at-1-30-52-pm.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2416,
+          "height": 1330,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/5LP49Q02CxamgtMTNWKIcxUw2Hf9Yyyd6/thumbnail.jpg?time=0&width=1170",
+          "card": "https://image.mux.com/5LP49Q02CxamgtMTNWKIcxUw2Hf9Yyyd6/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1170,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/5LP49Q02CxamgtMTNWKIcxUw2Hf9Yyyd6/medium.mp4",
+          "hls": "https://stream.mux.com/5LP49Q02CxamgtMTNWKIcxUw2Hf9Yyyd6.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790791369-screenshot-2026-09-30-at-2-02-29-pm.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790791369-screenshot-2026-09-30-at-2-02-29-pm.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1464,
+          "height": 1452,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/zbrFAgcznbDdVwFDMjl2az2JqPDhvUCx/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/zbrFAgcznbDdVwFDMjl2az2JqPDhvUCx/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1754,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/zbrFAgcznbDdVwFDMjl2az2JqPDhvUCx/medium.mp4",
+          "hls": "https://stream.mux.com/zbrFAgcznbDdVwFDMjl2az2JqPDhvUCx.m3u8"
+        }
+      ]
+    },
+    {
+      "id": "Si7X9BYBQiKv1dXkHgy1Jg",
+      "slug": "saffron-finance",
+      "title": "Saffron Finance",
+      "summary": "Saffron needed to feel like serious DeFi, but we did not want the site to feel cold or overly technical. We used storytelling to help lead people through the product, then brought in these more organic marble forms to represent roots, growth, and the idea of something continuing to build over time.",
+      "quote": null,
+      "industry": "Venture Capital",
+      "services": [
+        "Web Design",
+        "Web Development",
+        "3D Animation",
+        "Motion Design",
+        "Illustration & Iconography"
+      ],
+      "src": "https://image.mux.com/BPDhxGy2AWNqxT022EiaOr7001JCxA01Pxi/thumbnail.jpg?time=0&width=1080",
+      "card": "https://image.mux.com/BPDhxGy2AWNqxT022EiaOr7001JCxA01Pxi/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Saffron Finance",
+      "video": "https://stream.mux.com/BPDhxGy2AWNqxT022EiaOr7001JCxA01Pxi/medium.mp4",
+      "hls": "https://stream.mux.com/BPDhxGy2AWNqxT022EiaOr7001JCxA01Pxi.m3u8",
+      "gallery": [
+        {
+          "src": "https://www.datocms-assets.com/160733/1790788220-griflan-saffron-05.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790788220-griflan-saffron-05.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1080,
+          "height": 1350,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/BPDhxGy2AWNqxT022EiaOr7001JCxA01Pxi/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/BPDhxGy2AWNqxT022EiaOr7001JCxA01Pxi/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1350,
+          "alt": "",
+          "video": "https://stream.mux.com/BPDhxGy2AWNqxT022EiaOr7001JCxA01Pxi/medium.mp4",
+          "hls": "https://stream.mux.com/BPDhxGy2AWNqxT022EiaOr7001JCxA01Pxi.m3u8"
+        },
+        {
+          "src": "https://image.mux.com/Y9j4ZgXrIWNeez0042M7ofQHU00XMGx7r01/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/Y9j4ZgXrIWNeez0042M7ofQHU00XMGx7r01/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1350,
+          "alt": "",
+          "video": "https://stream.mux.com/Y9j4ZgXrIWNeez0042M7ofQHU00XMGx7r01/medium.mp4",
+          "hls": "https://stream.mux.com/Y9j4ZgXrIWNeez0042M7ofQHU00XMGx7r01.m3u8"
+        },
+        {
+          "src": "https://image.mux.com/rFHK76dPTrEogWReGbhEfduYH01W3Kghn/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/rFHK76dPTrEogWReGbhEfduYH01W3Kghn/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1350,
+          "alt": "",
+          "video": "https://stream.mux.com/rFHK76dPTrEogWReGbhEfduYH01W3Kghn/medium.mp4",
+          "hls": "https://stream.mux.com/rFHK76dPTrEogWReGbhEfduYH01W3Kghn.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790788323-griflan-saffron-06.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790788323-griflan-saffron-06.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1080,
+          "height": 1350,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/Dffb8KGTz1PA0001Ai5X6kc2r93j024hnAi/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/Dffb8KGTz1PA0001Ai5X6kc2r93j024hnAi/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1350,
+          "alt": "",
+          "video": "https://stream.mux.com/Dffb8KGTz1PA0001Ai5X6kc2r93j024hnAi/medium.mp4",
+          "hls": "https://stream.mux.com/Dffb8KGTz1PA0001Ai5X6kc2r93j024hnAi.m3u8"
+        }
+      ]
+    },
+    {
+      "id": "PY_fzYxXS7GKw6EU9kmaWQ",
+      "slug": "ultra-red",
+      "title": "Ultra Red",
+      "summary": "ULTRA RED already had a bold personality. We weren’t interested in sanding that down just to make cybersecurity feel more “serious.” The pink, the color, the energy, all of it became something to push harder, not hide. We leaned all the way in and built a brand that feels confident, loud, and completely comfortable standing apart from the category.",
+      "quote": null,
+      "industry": "Cyber Security",
+      "services": [
+        "Motion Identity",
+        "Motion Design",
+        "Web Design",
+        "Web Development"
+      ],
+      "src": "https://image.mux.com/goCKWmQblVEm7YuwyjyTb6KnjtoHZ8rh/thumbnail.jpg?time=0&width=1080",
+      "card": "https://image.mux.com/goCKWmQblVEm7YuwyjyTb6KnjtoHZ8rh/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Ultra Red",
+      "video": "https://stream.mux.com/goCKWmQblVEm7YuwyjyTb6KnjtoHZ8rh/medium.mp4",
+      "hls": "https://stream.mux.com/goCKWmQblVEm7YuwyjyTb6KnjtoHZ8rh.m3u8",
+      "gallery": [
+        {
+          "src": "https://image.mux.com/amDqWM6OklyY6Z501SfY9K34gWNAu3gcp/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/amDqWM6OklyY6Z501SfY9K34gWNAu3gcp/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1664,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/amDqWM6OklyY6Z501SfY9K34gWNAu3gcp/medium.mp4",
+          "hls": "https://stream.mux.com/amDqWM6OklyY6Z501SfY9K34gWNAu3gcp.m3u8"
+        },
+        {
+          "src": "https://image.mux.com/goCKWmQblVEm7YuwyjyTb6KnjtoHZ8rh/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/goCKWmQblVEm7YuwyjyTb6KnjtoHZ8rh/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1350,
+          "alt": "",
+          "video": "https://stream.mux.com/goCKWmQblVEm7YuwyjyTb6KnjtoHZ8rh/medium.mp4",
+          "hls": "https://stream.mux.com/goCKWmQblVEm7YuwyjyTb6KnjtoHZ8rh.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790879580-ultra-red-orb.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790879580-ultra-red-orb.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 4349,
+          "height": 4349,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/xzavqZhXtODe7hwA8cp1ihvsNi2ESRxz/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/xzavqZhXtODe7hwA8cp1ihvsNi2ESRxz/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1350,
+          "alt": "",
+          "video": "https://stream.mux.com/xzavqZhXtODe7hwA8cp1ihvsNi2ESRxz/medium.mp4",
+          "hls": "https://stream.mux.com/xzavqZhXtODe7hwA8cp1ihvsNi2ESRxz.m3u8"
+        },
+        {
+          "src": "https://image.mux.com/00GokRXurwtj4CyXjJxJv00hQ79UOGxJBw/thumbnail.jpg?time=0&width=1042",
+          "card": "https://image.mux.com/00GokRXurwtj4CyXjJxJv00hQ79UOGxJBw/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1042,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/00GokRXurwtj4CyXjJxJv00hQ79UOGxJBw/medium.mp4",
+          "hls": "https://stream.mux.com/00GokRXurwtj4CyXjJxJv00hQ79UOGxJBw.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790793511-screenshot-2026-09-30-at-2-37-47-pm.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790793511-screenshot-2026-09-30-at-2-37-47-pm.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2856,
+          "height": 1870,
+          "alt": "",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "Vp3hszUpSjqQDQVQkqPuBA",
+      "slug": "flatiron-sports",
+      "title": "Flatiron Sports",
+      "summary": "Flatiron Sports was built to capture the emotion of being at a live sporting event. The energy, anticipation, and sense of wow that comes with it. At the same time, the brand needed to feel bigger than any one sport, creating a flexible visual world that could move naturally across all kinds of athletes, teams, and experiences.",
+      "quote": null,
+      "industry": "Venture Capital",
+      "services": [
+        "2D Animation",
+        "Web Development",
+        "Web Design"
+      ],
+      "src": "https://image.mux.com/BwyyKY01drNtjTNsHlkdMQslgf02v00fE01B/thumbnail.jpg?time=0&width=1084",
+      "card": "https://image.mux.com/BwyyKY01drNtjTNsHlkdMQslgf02v00fE01B/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+      "width": 1084,
+      "height": 1080,
+      "alt": "Flatiron Sports",
+      "video": "https://stream.mux.com/BwyyKY01drNtjTNsHlkdMQslgf02v00fE01B/medium.mp4",
+      "hls": "https://stream.mux.com/BwyyKY01drNtjTNsHlkdMQslgf02v00fE01B.m3u8",
+      "gallery": [
+        {
+          "src": "https://image.mux.com/7ujMIVGpWWIQGnTLdmLSYL6NG021Iegn8/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/7ujMIVGpWWIQGnTLdmLSYL6NG021Iegn8/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1668,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/7ujMIVGpWWIQGnTLdmLSYL6NG021Iegn8/medium.mp4",
+          "hls": "https://stream.mux.com/7ujMIVGpWWIQGnTLdmLSYL6NG021Iegn8.m3u8"
+        },
+        {
+          "src": "https://image.mux.com/BwyyKY01drNtjTNsHlkdMQslgf02v00fE01B/thumbnail.jpg?time=0&width=1084",
+          "card": "https://image.mux.com/BwyyKY01drNtjTNsHlkdMQslgf02v00fE01B/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1084,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/BwyyKY01drNtjTNsHlkdMQslgf02v00fE01B/medium.mp4",
+          "hls": "https://stream.mux.com/BwyyKY01drNtjTNsHlkdMQslgf02v00fE01B.m3u8"
+        },
+        {
+          "src": "https://image.mux.com/iliG1MHKQIg3su46ky8iXmc3B01Goh5S7/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/iliG1MHKQIg3su46ky8iXmc3B01Goh5S7/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/iliG1MHKQIg3su46ky8iXmc3B01Goh5S7/medium.mp4",
+          "hls": "https://stream.mux.com/iliG1MHKQIg3su46ky8iXmc3B01Goh5S7.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790942833-flatiron-sports-stadium.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790942833-flatiron-sports-stadium.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2336,
+          "height": 2334,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790942428-flatiron-sports-contact.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790942428-flatiron-sports-contact.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2328,
+          "height": 2330,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790970648-image-53.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790970648-image-53.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3600,
+          "height": 1997,
+          "alt": "",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "bvg_CkBuRXqdvuaPeKJOgQ",
+      "slug": "fountain",
+      "title": "Fountain",
+      "summary": "Fountain needed to feel advanced without dressing the brand up in a bunch of unnecessary futurism. We wanted to pull more from the clinical, research-driven side of what they do and let that give the brand its confidence. The system is precise, technical, and highly considered, with just enough warmth to keep it human.",
+      "quote": null,
+      "industry": "Healthcare",
+      "services": [
+        "2D Animation",
+        "3D Animation",
+        "Motion Design",
+        "Web Development",
+        "Web Design",
+        "Brand Identity"
+      ],
+      "src": "https://image.mux.com/uLZ3Q01uQjx5JiM00ZNCFyWMcpqy89FITK/thumbnail.jpg?time=0&width=1080",
+      "card": "https://image.mux.com/uLZ3Q01uQjx5JiM00ZNCFyWMcpqy89FITK/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Fountain",
+      "video": "https://stream.mux.com/uLZ3Q01uQjx5JiM00ZNCFyWMcpqy89FITK/medium.mp4",
+      "hls": "https://stream.mux.com/uLZ3Q01uQjx5JiM00ZNCFyWMcpqy89FITK.m3u8",
+      "gallery": [
+        {
+          "src": "https://image.mux.com/6DGXmawAE0200fka02nhgV8eB4OdGx8YtZ02/thumbnail.jpg?time=4&width=1200",
+          "card": "https://image.mux.com/6DGXmawAE0200fka02nhgV8eB4OdGx8YtZ02/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1654,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/6DGXmawAE0200fka02nhgV8eB4OdGx8YtZ02/medium.mp4#t=4",
+          "hls": "https://stream.mux.com/6DGXmawAE0200fka02nhgV8eB4OdGx8YtZ02.m3u8#t=4"
+        },
+        {
+          "src": "https://image.mux.com/ZI02L7JsO01A02fRmWMWgCRUrxsLF7jHXt1/thumbnail.jpg?time=0&width=1000",
+          "card": "https://image.mux.com/ZI02L7JsO01A02fRmWMWgCRUrxsLF7jHXt1/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1000,
+          "height": 1042,
+          "alt": "",
+          "video": "https://stream.mux.com/ZI02L7JsO01A02fRmWMWgCRUrxsLF7jHXt1/medium.mp4",
+          "hls": "https://stream.mux.com/ZI02L7JsO01A02fRmWMWgCRUrxsLF7jHXt1.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790944973-fountain-meds.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790944973-fountain-meds.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 1896,
+          "height": 1896,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/KoaUyy01Q7Th3mFrnaP3z00FaokqC15rb7/thumbnail.jpg?time=0&width=1080",
+          "card": "https://image.mux.com/KoaUyy01Q7Th3mFrnaP3z00FaokqC15rb7/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1080,
+          "height": 1350,
+          "alt": "",
+          "video": "https://stream.mux.com/KoaUyy01Q7Th3mFrnaP3z00FaokqC15rb7/medium.mp4",
+          "hls": "https://stream.mux.com/KoaUyy01Q7Th3mFrnaP3z00FaokqC15rb7.m3u8"
+        },
+        {
+          "src": "https://image.mux.com/e81tOVKpcTiE7EYlsTZjXVVK8HSx5vor/thumbnail.jpg?time=0&width=1000",
+          "card": "https://image.mux.com/e81tOVKpcTiE7EYlsTZjXVVK8HSx5vor/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1000,
+          "height": 1052,
+          "alt": "",
+          "video": "https://stream.mux.com/e81tOVKpcTiE7EYlsTZjXVVK8HSx5vor/medium.mp4",
+          "hls": "https://stream.mux.com/e81tOVKpcTiE7EYlsTZjXVVK8HSx5vor.m3u8"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790965931-fountain-brand.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790965931-fountain-brand.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 3614,
+          "height": 2348,
+          "alt": "",
+          "video": null,
+          "hls": null
+        }
+      ]
+    },
+    {
+      "id": "MmVGFBO8SMWuN_GRFIqZHQ",
+      "slug": "geneva-med",
+      "title": "Geneva Med",
+      "summary": "GENEVA was built around the balance between beauty and science. We wanted the brand to carry the calm, elevated feeling of a spa while still showing the clinical thinking, precision, and expertise behind every treatment.",
+      "quote": null,
+      "industry": "Healthcare",
+      "services": [
+        "3D Animation",
+        "Motion Identity",
+        "Web Design",
+        "Web Development",
+        "Brand Identity"
+      ],
+      "src": "https://www.datocms-assets.com/160733/1790966490-geneva-med-2.jpg?auto=format&fit=max&w=1200",
+      "card": "https://www.datocms-assets.com/160733/1790966490-geneva-med-2.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+      "width": 2062,
+      "height": 2062,
+      "alt": "Geneva Med",
+      "video": null,
+      "hls": null,
+      "gallery": [
+        {
+          "src": "https://image.mux.com/qT02bX9tniQYnwBZGBlec8ghb0201qHQaav/thumbnail.jpg?time=1&width=1200",
+          "card": "https://image.mux.com/qT02bX9tniQYnwBZGBlec8ghb0201qHQaav/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1622,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/qT02bX9tniQYnwBZGBlec8ghb0201qHQaav/medium.mp4#t=1",
+          "hls": "https://stream.mux.com/qT02bX9tniQYnwBZGBlec8ghb0201qHQaav.m3u8#t=1"
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790966272-group-3692.png?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790966272-group-3692.png?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2160,
+          "height": 2160,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790967487-geneva-chart.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790967487-geneva-chart.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2066,
+          "height": 2066,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790966272-group-3693.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790966272-group-3693.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2160,
+          "height": 2160,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://www.datocms-assets.com/160733/1790966490-geneva-med-2.jpg?auto=format&fit=max&w=1200",
+          "card": "https://www.datocms-assets.com/160733/1790966490-geneva-med-2.jpg?fit=crop&fm=jpg&h=630&q=80&w=1200",
+          "width": 2062,
+          "height": 2062,
+          "alt": "",
+          "video": null,
+          "hls": null
+        },
+        {
+          "src": "https://image.mux.com/h01iKa81DToxkhAkpSk9Frl02egBPpToge/thumbnail.jpg?time=0&width=1200",
+          "card": "https://image.mux.com/h01iKa81DToxkhAkpSk9Frl02egBPpToge/thumbnail.jpg?width=1200&height=630&fit_mode=crop",
+          "width": 1920,
+          "height": 1080,
+          "alt": "",
+          "video": "https://stream.mux.com/h01iKa81DToxkhAkpSk9Frl02egBPpToge/medium.mp4",
+          "hls": "https://stream.mux.com/h01iKa81DToxkhAkpSk9Frl02egBPpToge.m3u8"
+        }
+      ]
+    }
+  ]
+};

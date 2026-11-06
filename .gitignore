@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.npm/
+dist/
+build/
+
+# Backups & Logs
+*.bak
+*.log
+.DS_Store
+Thumbs.db
+
+# Scratch extraction scripts from setup
+dump_*.js
+extract*.js
+extract*.py
+inspect_*.js
+find_*.js
+parse_*.js
+check_routes.js
+script_*.js
+svg_*.svg
+cm5.js
+beon.js
+entry.js
+dttm.js
+site_data.json
+header_exact.html
+nuxt_rendered_body.html
+griflan_fresh.html
+test_*.svg
+analyze_bundles.js
+
+# Loose root asset duplicates (already organized in public/)
+/*.woff2
+/*.riv
+/logo.svg
+
+# Environment
+.env
+.env.local

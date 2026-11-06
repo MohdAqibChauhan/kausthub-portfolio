@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" style="background:#181616">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Let It Out — Kaustubh Gondhali</title>
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ==========================================================================
+       Custom Font Declarations
+       - TAN MEMORIES: Editorial display serif matching Kaustubh's portfolio logo
+       ========================================================================== */
+    @font-face {
+      font-family: 'TAN MEMORIES';
+      src: url('/fonts/TANMEMORIES-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #181616; /* Portfolio Obsidian Ground */
+      color: #fffddb;            /* Portfolio Bone Ivory */
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    /* Subtle dot grid background matching portfolio architectural grid */
+    .dot-grid-bg {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255, 253, 219, 0.12) 1.2px, transparent 1.2px);
+      background-size: 28px 28px;
+      pointer-events: none;
+    }
+
+    /* Center typography matching the portfolio serif branding */
+    .center-text-prompt {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      text-align: center;
+      line-height: 0.85;
+      z-index: 5;
+      user-select: none;
+    }
+
+    .let-it {
+      font-family: 'TAN MEMORIES', serif;
+      font-size: min(18vw, 155px);
+      font-weight: normal;
+      color: #fffddb; /* Ivory Bone */
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      display: block;
+      filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.9));
+    }
+
+    .out {
+      font-family: 'TAN MEMORIES', serif;
+      font-size: min(18vw, 155px);
+      font-weight: normal;
+      color: #ff3831; /* Portfolio Signature Vermilion */
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      display: block;
+      filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.9));
+    }
+
+    /* Canvas drawing layer */
+    #drawCanvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      cursor: crosshair;
+      touch-action: none;
+    }
+
+    /* Floating bottom toolbar */
+    .draw-toolbar {
+      position: fixed;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 30;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 20px;
+      background: rgba(24, 22, 22, 0.9);
+      border: 1px solid rgba(255, 56, 49, 0.35);
+      border-radius: 9999px;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: 0 0 25px rgba(255, 56, 49, 0.12), 0 14px 40px rgba(0, 0, 0, 0.85);
+      transition: all 0.25s ease;
+    }
+
+    .color-swatch {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s;
+    }
+
+    .color-swatch:hover {
+      transform: scale(1.2);
+    }
+
+    .color-swatch.active {
+      transform: scale(1.25);
+      border-color: #fffddb;
+      box-shadow: 0 0 14px currentColor;
+    }
+
+    .tool-btn {
+      background: rgba(255, 253, 219, 0.08);
+      border: 1px solid rgba(255, 253, 219, 0.18);
+      color: #fffddb;
+      padding: 7px 14px;
+      border-radius: 9999px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .tool-btn:hover {
+      background: rgba(255, 56, 49, 0.25);
+      border-color: #ff3831;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .divider {
+      width: 1px;
+      height: 20px;
+      background: rgba(255, 253, 219, 0.2);
+      margin: 0 2px;
+    }
+
+    /* Top navigation header */
+    .draw-header {
+      position: fixed;
+      top: 0;
+      inset-x: 0;
+      height: 65px;
+      z-index: 30;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 26px;
+      pointer-events: none;
+    }
+
+    .back-btn {
+      pointer-events: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      border-radius: 9999px;
+      background: rgba(24, 22, 22, 0.88);
+      border: 1px solid rgba(255, 253, 219, 0.22);
+      color: #fffddb;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      transition: all 0.25s ease;
+      backdrop-filter: blur(14px);
+    }
+
+    .back-btn:hover {
+      background: #ff3831;
+      color: #fff;
+      border-color: #ff3831;
+      box-shadow: 0 0 20px rgba(255, 56, 49, 0.4);
+      transform: translateY(-1px);
+    }
+
+    /* Bottom-left artist signature note */
+    .artist-footnote {
+      position: fixed;
+      bottom: 26px;
+      left: 26px;
+      z-index: 20;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255, 253, 219, 0.45);
+      pointer-events: none;
+    }
+
+    /* Brush size pills */
+    .brush-size-btn {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(255, 253, 219, 0.08);
+      border: 1px solid rgba(255, 253, 219, 0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #fffddb;
+      font-size: 10px;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .brush-size-btn:hover {
+      border-color: #ff3831;
+      color: #fff;
+    }
+    .brush-size-btn.active {
+      background: #ff3831;
+      border-color: #ff3831;
+      box-shadow: 0 0 10px rgba(255, 56, 49, 0.6);
+      color: #fff;
+    }
+
+    #saveBtn {
+      background: #ff3831;
+      color: #fff;
+      border: 1px solid #ff3831;
+      box-shadow: 0 0 16px rgba(255, 56, 49, 0.4);
+      font-weight: 600;
+    }
+    #saveBtn:hover {
+      background: #e62822;
+      box-shadow: 0 0 24px rgba(255, 56, 49, 0.7);
+      transform: translateY(-1px) scale(1.02);
+    }
+
+    @media (max-width: 650px) {
+      .draw-toolbar {
+        bottom: 16px;
+        padding: 7px 14px;
+        gap: 8px;
+        max-width: 95vw;
+        overflow-x: auto;
+      }
+      .color-swatch {
+        width: 20px;
+        height: 20px;
+      }
+      .artist-footnote {
+        display: none;
+      }
+      .draw-header {
+        padding: 0 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Dot Grid Texture -->
+  <div class="dot-grid-bg"></div>
+
+  <!-- Big Typography Prompt matching portfolio serif font & colors -->
+  <div class="center-text-prompt">
+    <span class="let-it">LET IT</span>
+    <span class="out">OUT.</span>
+  </div>
+
+  <!-- Drawing Surface -->
+  <canvas id="drawCanvas"></canvas>
+
+  <!-- Top Bar -->
+  <header class="draw-header">
+    <a href="/" class="back-btn">
+      ← Back to Portfolio
+    </a>
+    <div style="pointer-events:auto; display:flex; gap:10px;">
+      <button id="undoBtn" class="tool-btn" title="Undo stroke">Undo</button>
+      <button id="clearBtn" class="tool-btn" title="Clear canvas">Clear</button>
+    </div>
+  </header>
+
+  <!-- Bottom Floating Toolbar -->
+  <div class="draw-toolbar">
+    <!-- Palette swatches matching the portfolio design system -->
+    <div class="color-swatch active" data-color="#ff3831" style="background:#ff3831;" title="Signature Vermilion"></div>
+    <div class="color-swatch" data-color="#fffddb" style="background:#fffddb;" title="Bone Ivory"></div>
+    <div class="color-swatch" data-color="#ff9800" style="background:#ff9800;" title="Flame Orange"></div>
+    <div class="color-swatch" data-color="#d4ff00" style="background:#d4ff00;" title="Acid Lime"></div>
+    <div class="color-swatch" data-color="#b892ff" style="background:#b892ff;" title="Lavender Violet"></div>
+    <div class="color-swatch" data-color="#00f0ff" style="background:#00f0ff;" title="Cyber Cyan"></div>
+    
+    <div class="divider"></div>
+
+    <!-- Brush Sizes -->
+    <div class="brush-size-btn" data-size="4" title="Thin">S</div>
+    <div class="brush-size-btn active" data-size="8" title="Medium">M</div>
+    <div class="brush-size-btn" data-size="16" title="Thick">L</div>
+
+    <div class="divider"></div>
+
+    <!-- Download Artwork Button -->
+    <button id="saveBtn" class="tool-btn" title="Download Artwork with Custom Typography">
+      Save PNG
+    </button>
+  </div>
+
+  <!-- Footnote -->
+  <div class="artist-footnote">
+    A LITTLE OFF-BRIEF. / KAUSTUBH GONDHALI
+  </div>
+
+  <script>
+    /**
+     * Interactive Canvas Logic
+     * Features:
+     * - Vector quadratic bezier curve smoothing
+     * - Touch, stylus & pointer device compatibility
+     * - Retina DPR resolution scaling
+     * - High-resolution 2x PNG composite download with custom serif typography
+     */
+    const canvas = document.getElementById('drawCanvas');
+    const ctx = canvas.getContext('2d');
+
+    let isDrawing = false;
+    let currentColor = '#ff3831'; // Default Signature Vermilion Red
+    let currentSize = 8;
+    let points = [];
+    let strokes = []; // For undo history
+
+    function resize() {
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      ctx.scale(dpr, dpr);
+      redrawAll();
+    }
+
+    window.addEventListener('resize', resize);
+
+    function redrawAll() {
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      strokes.forEach(stroke => {
+        if (stroke.points.length < 2) return;
+        ctx.strokeStyle = stroke.color;
+        ctx.lineWidth = stroke.size;
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.beginPath();
+        ctx.moveTo(stroke.points[0].x, stroke.points[0].y);
+        for (let i = 1; i < stroke.points.length; i++) {
+          const xc = (stroke.points[i].x + stroke.points[i - 1].x) / 2;
+          const yc = (stroke.points[i].y + stroke.points[i - 1].y) / 2;
+          ctx.quadraticCurveTo(stroke.points[i - 1].x, stroke.points[i - 1].y, xc, yc);
+        }
+        ctx.stroke();
+      });
+    }
+
+    function getCoords(e) {
+      if (e.touches && e.touches.length > 0) {
+        return { x: e.touches[0].clientX, y: e.touches[0].clientY };
+      }
+      return { x: e.clientX, y: e.clientY };
+    }
+
+    function startDraw(e) {
+      isDrawing = true;
+      const { x, y } = getCoords(e);
+      points = [{ x, y }];
+      ctx.strokeStyle = currentColor;
+      ctx.lineWidth = currentSize;
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      ctx.beginPath();
+      ctx.moveTo(x, y);
+    }
+
+    function moveDraw(e) {
+      if (!isDrawing) return;
+      e.preventDefault();
+      const { x, y } = getCoords(e);
+      points.push({ x, y });
+
+      if (points.length >= 2) {
+        const p1 = points[points.length - 2];
+        const p2 = points[points.length - 1];
+        const xc = (p1.x + p2.x) / 2;
+        const yc = (p1.y + p2.y) / 2;
+        ctx.quadraticCurveTo(p1.x, p1.y, xc, yc);
+        ctx.stroke();
+      }
+    }
+
+    function endDraw() {
+      if (!isDrawing) return;
+      isDrawing = false;
+      if (points.length > 0) {
+        strokes.push({
+          color: currentColor,
+          size: currentSize,
+          points: [...points]
+        });
+      }
+      points = [];
+    }
+
+    // Pointer events for mouse, pen & touch
+    canvas.addEventListener('pointerdown', startDraw);
+    canvas.addEventListener('pointermove', moveDraw);
+    window.addEventListener('pointerup', endDraw);
+    window.addEventListener('pointercancel', endDraw);
+
+    // Color Swatches
+    document.querySelectorAll('.color-swatch').forEach(swatch => {
+      swatch.addEventListener('click', () => {
+        document.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('active'));
+        swatch.classList.add('active');
+        currentColor = swatch.getAttribute('data-color');
+      });
+    });
+
+    // Brush Sizes
+    document.querySelectorAll('.brush-size-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.brush-size-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentSize = parseInt(btn.getAttribute('data-size'), 10);
+      });
+    });
+
+    // Clear Canvas
+    document.getElementById('clearBtn').addEventListener('click', () => {
+      strokes = [];
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    });
+
+    // Undo
+    document.getElementById('undoBtn').addEventListener('click', () => {
+      strokes.pop();
+      redrawAll();
+    });
+
+    // Save PNG Artwork (including background text)
+    document.getElementById('saveBtn').addEventListener('click', () => {
+      const compCanvas = document.createElement('canvas');
+      compCanvas.width = window.innerWidth * 2;
+      compCanvas.height = window.innerHeight * 2;
+      const cCtx = compCanvas.getContext('2d');
+      cCtx.scale(2, 2);
+
+      // Background
+      cCtx.fillStyle = '#181616';
+      cCtx.fillRect(0, 0, window.innerWidth, window.innerHeight);
+
+      // Draw dot grid
+      cCtx.fillStyle = 'rgba(255, 253, 219, 0.12)';
+      for (let x = 0; x < window.innerWidth; x += 28) {
+        for (let y = 0; y < window.innerHeight; y += 28) {
+          cCtx.beginPath();
+          cCtx.arc(x, y, 1.2, 0, Math.PI * 2);
+          cCtx.fill();
+        }
+      }
+
+      // Draw background text "LET IT OUT." using TAN MEMORIES
+      cCtx.textAlign = 'center';
+      cCtx.textBaseline = 'middle';
+      const fontSize = Math.min(window.innerWidth * 0.18, 155);
+      cCtx.font = fontSize + 'px "TAN MEMORIES", serif';
+      
+      cCtx.fillStyle = '#fffddb';
+      cCtx.fillText('LET IT', window.innerWidth / 2, window.innerHeight / 2 - fontSize * 0.44);
+      
+      cCtx.fillStyle = '#ff3831';
+      cCtx.fillText('OUT.', window.innerWidth / 2, window.innerHeight / 2 + fontSize * 0.44);
+
+      // Draw user strokes
+      cCtx.lineCap = 'round';
+      cCtx.lineJoin = 'round';
+      strokes.forEach(stroke => {
+        if (stroke.points.length < 2) return;
+        cCtx.strokeStyle = stroke.color;
+        cCtx.lineWidth = stroke.size;
+        cCtx.beginPath();
+        cCtx.moveTo(stroke.points[0].x, stroke.points[0].y);
+        for (let i = 1; i < stroke.points.length; i++) {
+          const xc = (stroke.points[i].x + stroke.points[i - 1].x) / 2;
+          const yc = (stroke.points[i].y + stroke.points[i - 1].y) / 2;
+          cCtx.quadraticCurveTo(stroke.points[i - 1].x, stroke.points[i - 1].y, xc, yc);
+        }
+        cCtx.stroke();
+      });
+
+      // Draw signature
+      cCtx.textAlign = 'left';
+      cCtx.font = '10px "Roboto Mono", monospace';
+      cCtx.fillStyle = 'rgba(255, 253, 219, 0.45)';
+      cCtx.fillText('A LITTLE OFF-BRIEF. / KAUSTUBH GONDHALI', 26, window.innerHeight - 26);
+
+      // Trigger download
+      const link = document.createElement('a');
+      link.download = 'kaustubh-let-it-out.png';
+      link.href = compCanvas.toDataURL('image/png');
+      link.click();
+    });
+
+    // Initialize canvas on load
+    resize();
+  </script>
+</body>
+</html>

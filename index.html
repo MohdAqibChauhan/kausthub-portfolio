@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" style="background:#181616">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Griflan Labs</title>
+  <meta name="description" content="A strategy-led design studio specializing in laying down the awesome sauce.">
+  <meta name="theme-color" content="#181616">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Griflan Labs">
+  <meta property="og:title" content="Griflan Labs">
+  <meta property="og:description" content="A strategy-led design studio specializing in laying down the awesome sauce.">
+  <meta property="og:url" content="https://labs.griflan.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Griflan">
+  <meta name="twitter:title" content="Griflan Labs">
+  <meta name="twitter:description" content="A strategy-led design studio specializing in laying down the awesome sauce.">
+  
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    @font-face {
+      font-family: 'Helvetica Neue';
+      src: url('/fonts/HelveticaNeueLTPro-Roman.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Helvetica Neue';
+      src: url('/fonts/HelveticaNeueLTPro-Md.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'TAN MEMORIES';
+      src: url('/fonts/TANMEMORIES-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background-color: #181616;
+      color: #fffddb;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      overflow-x: hidden;
+      min-height: 100vh;
+      user-select: none;
+    }
+
+    ::selection {
+      background: #ff3831;
+      color: #fffddb;
+    }
+
+    /* Custom scrollbars */
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #181616;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #46443d;
+      border-radius: 2px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ff3831;
+    }
+  </style>
+</head>
+<body class="bg-black text-ink">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

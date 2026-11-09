@@ -35,7 +35,20 @@
         }
       });
 
-      // 4. Signature Flame & Vermilion Floating Invite Pill
+      // 4. Update About drawer categories: Photos, Videos, Motion Graphics 2D
+      const catLabels = document.querySelectorAll('.type-label.text-accent, p.type-label, [data-row].type-label');
+      catLabels.forEach(el => {
+        const txt = el.textContent.trim();
+        if (txt === 'Branding' || txt === 'BRANDING') {
+          el.textContent = 'Photos';
+        } else if (txt === 'Digital' || txt === 'DIGITAL') {
+          el.textContent = 'Videos';
+        } else if (txt === 'Motion' || txt === 'MOTION') {
+          el.textContent = 'Motion Graphics 2D';
+        }
+      });
+
+      // 5. Signature Flame & Vermilion Floating Invite Pill
       if (!document.getElementById('floating-draw-invite')) {
         const invite = document.createElement('a');
         invite.id = 'floating-draw-invite';
@@ -156,4 +169,10 @@
   }
   setTimeout(applyBranding, 300);
   setTimeout(applyBranding, 1200);
+
+  // Watch for drawer open / DOM changes
+  const observer = new MutationObserver(() => {
+    applyBranding();
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
 })();

@@ -30,6 +30,11 @@ nuxt_rendered_body.html
 griflan_fresh.html
 test_*.svg
 analyze_bundles.js
+check_*.cjs
+inspect_*.cjs
+find_*.cjs
+test_*.cjs
+apply_*.cjs
 
 # Loose root asset duplicates (already organized in public/)
 /*.woff2

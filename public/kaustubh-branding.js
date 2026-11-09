@@ -181,6 +181,70 @@
     }
   }
 
+  // 6. Fail-Safe Loading Screen Dismissal
+  // Guarantees that the loading screen NEVER hangs — targets both the z-[101] shades div
+  // (intro overlay with KAUSTUBH GONDHALI SVG + LOADING...) and the z-99 black cover.
+  // Brave may block WebGPU or stall the intro animation; this forces a reveal.
+  let siteRevealed = false;
+
+  function ensureSiteRevealed() {
+    if (siteRevealed) return;
+
+    // Target the actual overlay classes used by this Nuxt app
+    const shades = document.querySelector('[class*="z-[101]"]');
+    const cover = document.querySelector('[class*="z-99"]');
+    const loading = document.querySelector('[data-loading]');
+    const blind = document.querySelector('[data-opening]');
+
+    // Check if the loading overlay is actually visible & blocking
+    const shadesVisible = shades && shades.offsetParent !== null &&
+      window.getComputedStyle(shades).opacity !== '0' &&
+      window.getComputedStyle(shades).display !== 'none';
+
+    if (!shadesVisible && !cover) {
+      // Page already revealed naturally
+      siteRevealed = true;
+      return;
+    }
+
+    siteRevealed = true;
+    console.log('[Branding] Force-revealing site (fail-safe triggered)');
+
+    function fadeOut(el, delay) {
+      if (!el) return;
+      el.style.transition = 'opacity 0.5s ease';
+      el.style.opacity = '0';
+      el.style.pointerEvents = 'none';
+      setTimeout(() => {
+        el.style.display = 'none';
+        el.style.visibility = 'hidden';
+      }, delay || 600);
+    }
+
+    if (loading) {
+      loading.style.opacity = '0';
+    }
+    if (blind) {
+      blind.style.opacity = '0';
+      blind.style.visibility = 'hidden';
+    }
+
+    fadeOut(shades, 600);
+    fadeOut(cover, 600);
+
+    // Also target any remaining full-screen fixed black overlays above z-50
+    document.querySelectorAll('div[class*="fixed"][class*="inset-0"]').forEach(el => {
+      const z = parseInt(window.getComputedStyle(el).zIndex) || 0;
+      if (z >= 50 && z < 1000) {
+        const h = el.offsetHeight;
+        const w = el.offsetWidth;
+        if (h > 200 && w > 200) {
+          fadeOut(el, 600);
+        }
+      }
+    });
+  }
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', applyBranding);
   } else {
@@ -189,7 +253,12 @@
   setTimeout(applyBranding, 300);
   setTimeout(applyBranding, 1200);
 
-  // Safe user-interaction trigger (e.g. clicking ABOUT or navigating) without infinite mutation loops
+  // Safety timers: attempt reveal at 2s, 4s, 7s to handle slow Brave/GPU init
+  setTimeout(ensureSiteRevealed, 2000);
+  setTimeout(ensureSiteRevealed, 4000);
+  setTimeout(ensureSiteRevealed, 7000);
+
+  // Safe user-interaction trigger
   document.addEventListener('click', (e) => {
     if (e.target && (e.target.closest('button') || e.target.closest('a'))) {
       setTimeout(applyBranding, 50);

@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en" style="background:#181616">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio CMS — Kaustubh Gondhali</title>
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'TAN MEMORIES';
+      src: url('/fonts/TANMEMORIES-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --bg: #181616;
+      --surface: #1f1c1c;
+      --surface-hover: #272323;
+      --surface-elevated: #221f1f;
+      --ink: #fffddb;
+      --ink-muted: #b5b39e;
+      --ink-dim: rgba(255, 253, 219, 0.42);
+      --accent: #ff3831;
+      --accent-glow: rgba(255, 56, 49, 0.35);
+      --ember: #ff7a00;
+      --line: rgba(255, 253, 219, 0.12);
+      --line-strong: rgba(255, 253, 219, 0.24);
+      --success: #2ee59d;
+      --font-serif: 'TAN MEMORIES', Georgia, serif;
+      --font-mono: 'Roboto Mono', monospace;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      min-height: 100vh;
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Subtle dot grid matching /draw & portfolio architectural feel */
+    .dot-grid-bg {
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(rgba(255, 253, 219, 0.08) 1.2px, transparent 1.2px);
+      background-size: 28px 28px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ==========================================================================
+       LOGIN SCREEN
+       ========================================================================== */
+    #loginGate {
+      position: fixed;
+      inset: 0;
+      z-index: 500;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .login-card {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 440px;
+      background: rgba(28, 25, 25, 0.92);
+      border: 1px solid var(--line-strong);
+      border-radius: 16px;
+      padding: 44px 36px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75), 0 0 40px rgba(255, 56, 49, 0.08);
+      backdrop-filter: blur(16px);
+      text-align: center;
+    }
+
+    .brand-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 10px var(--accent);
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.8; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.25); }
+    }
+
+    .login-title {
+      font-family: var(--font-serif);
+      font-size: 30px;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .login-sub {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--ink-muted);
+      letter-spacing: 0.04em;
+      margin-bottom: 28px;
+    }
+
+    .form-input {
+      width: 100%;
+      background: rgba(15, 13, 13, 0.85);
+      border: 1px solid var(--line-strong);
+      border-radius: 10px;
+      padding: 14px 16px;
+      color: var(--ink);
+      font-family: var(--font-mono);
+      font-size: 13px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(255, 56, 49, 0.18);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--ink);
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      padding: 12px 24px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.22s ease;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(255, 56, 49, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: #ff4d47;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 26px rgba(255, 56, 49, 0.45);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 253, 219, 0.04);
+      color: var(--ink);
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      padding: 10px 20px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(255, 56, 49, 0.08);
+    }
+
+    /* ==========================================================================
+       ARCHITECTURAL HEADER
+       ========================================================================== */
+    .cms-wrapper {
+      position: relative;
+      z-index: 2;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cms-header {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      border-bottom: 1px solid var(--line);
+      background: rgba(24, 22, 22, 0.88);
+      backdrop-filter: blur(14px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-cell {
+      padding: 20px 28px;
+      display: flex;
+      align-items: center;
+      border-right: 1px solid var(--line);
+    }
+
+    .header-cell:last-child {
+      border-right: none;
+      gap: 12px;
+    }
+
+    .brand-title {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .brand-roles {
+      font-family: var(--font-serif);
+      font-size: 14px;
+      color: var(--ink-muted);
+      letter-spacing: 0.02em;
+    }
+
+    /* ==========================================================================
+       TOOLBAR & CATEGORY TABS
+       ========================================================================== */
+    .cms-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px 28px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(24, 22, 22, 0.6);
+    }
+
+    .cat-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .cat-tab {
+      background: rgba(255, 253, 219, 0.03);
+      border: 1px solid var(--line);
+      color: var(--ink-muted);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .cat-tab:hover {
+      border-color: var(--ink-muted);
+      color: var(--ink);
+    }
+
+    .cat-tab.active {
+      background: rgba(255, 56, 49, 0.14);
+      border-color: var(--accent);
+      color: var(--ink);
+      box-shadow: 0 0 18px rgba(255, 56, 49, 0.2);
+    }
+
+    .cat-count {
+      background: rgba(255, 253, 219, 0.1);
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-size: 10px;
+      color: var(--ink);
+    }
+
+    .cat-tab.active .cat-count {
+      background: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-box {
+      position: relative;
+      min-width: 280px;
+    }
+
+    .search-box input {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 18px;
+      color: var(--ink);
+      font-family: var(--font-mono);
+      font-size: 12px;
+      outline: none;
+    }
+
+    .search-box input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ==========================================================================
+       PROJECTS GRID
+       ========================================================================== */
+    .cms-main {
+      padding: 32px 28px 80px;
+      max-width: 1600px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+    }
+
+    .project-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255, 56, 49, 0.5);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+    }
+
+    .card-media {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      background: #100e0e;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .card-media img,
+    .card-media video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .project-card:hover .card-media img,
+    .project-card:hover .card-media video {
+      transform: scale(1.03);
+    }
+
+    .card-badges {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .badge-cat {
+      background: rgba(24, 22, 22, 0.88);
+      border: 1px solid var(--accent);
+      color: var(--ink);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      backdrop-filter: blur(8px);
+    }
+
+    .badge-media {
+      background: rgba(24, 22, 22, 0.85);
+      border: 1px solid var(--line-strong);
+      color: var(--ink-muted);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      backdrop-filter: blur(8px);
+    }
+
+    .card-body {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-title {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      color: var(--ink);
+      letter-spacing: 0.03em;
+      margin-bottom: 6px;
+      line-height: 1.25;
+    }
+
+    .card-slug {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .card-summary {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--ink-muted);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 16px;
+      flex: 1;
+    }
+
+    .card-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    .action-btn {
+      background: rgba(255, 253, 219, 0.04);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      padding: 7px 12px;
+      border-radius: 8px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .action-btn:hover {
+      border-color: var(--ink);
+      background: rgba(255, 253, 219, 0.1);
+    }
+
+    .action-btn.edit-btn {
+      background: rgba(255, 56, 49, 0.12);
+      border-color: rgba(255, 56, 49, 0.4);
+      color: var(--ink);
+      flex: 1;
+      justify-content: center;
+    }
+
+    .action-btn.edit-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .action-btn.delete-btn:hover {
+      border-color: #ff4d47;
+      color: #ff4d47;
+      background: rgba(255, 56, 49, 0.1);
+    }
+
+    /* ==========================================================================
+       MODAL EDITOR (ADD / EDIT PROJECT)
+       ========================================================================== */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: rgba(10, 9, 9, 0.85);
+      backdrop-filter: blur(12px);
+      display: none;
+      align-items: flex-start;
+      justify-content: center;
+      overflow-y: auto;
+      padding: 40px 20px;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-panel {
+      width: 100%;
+      max-width: 860px;
+      background: var(--surface-elevated);
+      border: 1px solid var(--line-strong);
+      border-radius: 18px;
+      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.85);
+      overflow: hidden;
+      margin: auto;
+    }
+
+    .modal-header {
+      padding: 24px 30px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(24, 22, 22, 0.9);
+    }
+
+    .modal-title {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+
+    .modal-body {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .field-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .field-label span.req {
+      color: var(--accent);
+    }
+
+    .cat-selector {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .cat-option {
+      border: 1px solid var(--line-strong);
+      background: rgba(15, 13, 13, 0.6);
+      border-radius: 10px;
+      padding: 14px;
+      cursor: pointer;
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ink-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      transition: all 0.2s ease;
+    }
+
+    .cat-option.selected {
+      border-color: var(--accent);
+      background: rgba(255, 56, 49, 0.16);
+      color: var(--ink);
+      box-shadow: 0 0 20px rgba(255, 56, 49, 0.2);
+    }
+
+    /* Drag & Drop Upload Zone */
+    .dropzone {
+      border: 1.5px dashed var(--line-strong);
+      border-radius: 12px;
+      background: rgba(15, 13, 13, 0.55);
+      padding: 24px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .dropzone:hover, .dropzone.dragover {
+      border-color: var(--accent);
+      background: rgba(255, 56, 49, 0.06);
+    }
+
+    .dropzone-title {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .dropzone-sub {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--ink-dim);
+    }
+
+    .media-preview-box {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(15, 13, 13, 0.8);
+      border: 1px solid var(--line);
+      padding: 12px;
+      border-radius: 10px;
+    }
+
+    .media-preview-thumb {
+      width: 120px;
+      height: 76px;
+      border-radius: 6px;
+      object-fit: cover;
+      background: #000;
+      border: 1px solid var(--line);
+      flex-shrink: 0;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .gallery-item {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--line-strong);
+      background: #0e0c0c;
+    }
+
+    .gallery-item img, .gallery-item video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-remove {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(24, 22, 22, 0.9);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .progress-bar-wrap {
+      width: 100%;
+      height: 6px;
+      background: rgba(255, 253, 219, 0.08);
+      border-radius: 999px;
+      overflow: hidden;
+      display: none;
+      margin-top: 8px;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: var(--accent);
+      transition: width 0.15s ease;
+    }
+
+    .modal-footer {
+      padding: 20px 30px;
+      border-top: 1px solid var(--line);
+      background: rgba(24, 22, 22, 0.9);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Toast Notification */
+    #toast {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 600;
+      background: rgba(24, 22, 22, 0.96);
+      border: 1px solid var(--accent);
+      color: var(--ink);
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 56, 49, 0.25);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+
+    #toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 900px) {
+      .cms-header {
+        grid-template-columns: 1fr;
+      }
+      .header-cell {
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+      }
+      .form-row, .cat-selector {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dot-grid-bg"></div>
+
+  <!-- ========================================================================
+       1. PASSWORD LOGIN GATE
+       ======================================================================== -->
+  <div id="loginGate">
+    <form class="login-card" id="loginForm">
+      <div class="brand-eyebrow">
+        <span class="pulse-dot"></span>
+        STUDIO ADMIN PORTAL
+      </div>
+      <h1 class="login-title">Kaustubh Gondhali</h1>
+      <p class="login-sub">Photos • Videos • Motion Graphics 2D</p>
+
+      <div class="field-group" style="text-align:left; margin-bottom:18px;">
+        <label class="field-label">Admin Access Key</label>
+        <input type="password" id="adminPassInput" class="form-input" placeholder="Enter password..." required autofocus>
+      </div>
+
+      <button type="submit" class="btn-primary" style="width:100%;">
+        Unlock Studio CMS →
+      </button>
+      <p id="loginError" style="color:var(--accent); font-family:var(--font-mono); font-size:11px; margin-top:12px; display:none;">
+        Invalid access key. Try: kaustubh2026
+      </p>
+      <p style="color:var(--ink-dim); font-family:var(--font-mono); font-size:10px; margin-top:18px;">
+        Default Client Key: <strong style="color:var(--ink-muted)">kaustubh2026</strong>
+      </p>
+    </form>
+  </div>
+
+  <!-- ========================================================================
+       2. MAIN CMS DASHBOARD
+       ======================================================================== -->
+  <div class="cms-wrapper" id="cmsApp" style="display:none;">
+    <header class="cms-header">
+      <div class="header-cell">
+        <div>
+          <div class="brand-eyebrow" style="margin-bottom:4px;">
+            <span class="pulse-dot"></span>
+            LIVE PORTFOLIO CMS
+          </div>
+          <div class="brand-title">Kaustubh Gondhali</div>
+        </div>
+      </div>
+
+      <div class="header-cell">
+        <div class="brand-roles">Graphics Designer &nbsp;|&nbsp; Video Editor &nbsp;|&nbsp; Motion Graphics</div>
+      </div>
+
+      <div class="header-cell">
+        <a href="/" target="_blank" class="btn-secondary">
+          ↗ View 3D Globe
+        </a>
+        <button type="button" class="btn-primary" id="newProjectBtn">
+          + Upload New Work
+        </button>
+        <button type="button" class="btn-secondary" id="logoutBtn" title="Lock Admin">
+          🔒
+        </button>
+      </div>
+    </header>
+
+    <div class="cms-toolbar">
+      <div class="cat-tabs" id="categoryTabs">
+        <button class="cat-tab active" data-cat="ALL">
+          All Work <span class="cat-count" id="count-ALL">0</span>
+        </button>
+        <button class="cat-tab" data-cat="Photos">
+          📸 Photos <span class="cat-count" id="count-Photos">0</span>
+        </button>
+        <button class="cat-tab" data-cat="Videos">
+          🎬 Videos <span class="cat-count" id="count-Videos">0</span>
+        </button>
+        <button class="cat-tab" data-cat="Motion Graphics 2D">
+          ✨ Motion Graphics 2D <span class="cat-count" id="count-Motion">0</span>
+        </button>
+      </div>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search projects by title or tag...">
+      </div>
+    </div>
+
+    <main class="cms-main">
+      <div class="projects-grid" id="projectsGrid"></div>
+    </main>
+  </div>
+
+  <!-- ========================================================================
+       3. ADD / EDIT PROJECT MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="editorModal">
+    <form class="modal-panel" id="projectForm">
+      <div class="modal-header">
+        <div>
+          <div class="brand-eyebrow" style="margin-bottom:4px;">
+            <span class="pulse-dot"></span>
+            PORTFOLIO ITEM EDITOR
+          </div>
+          <h2 class="modal-title" id="modalHeading">Upload New Work</h2>
+        </div>
+        <button type="button" class="btn-secondary" id="closeModalBtn">✕ Close</button>
+      </div>
+
+      <div class="modal-body">
+        <input type="hidden" id="projId">
+
+        <!-- Category Selection -->
+        <div class="field-group">
+          <label class="field-label">1. Select Portfolio Category <span class="req">*Required</span></label>
+          <div class="cat-selector" id="catSelector">
+            <div class="cat-option selected" data-val="Photos">📸 Photos</div>
+            <div class="cat-option" data-val="Videos">🎬 Videos</div>
+            <div class="cat-option" data-val="Motion Graphics 2D">✨ Motion Graphics 2D</div>
+          </div>
+        </div>
+
+        <!-- Title & Slug -->
+        <div class="form-row">
+          <div class="field-group">
+            <label class="field-label">Project Title <span class="req">*Required</span></label>
+            <input type="text" id="projTitle" class="form-input" placeholder="e.g. Nike Air Max Kinetic Reel" required>
+          </div>
+          <div class="field-group">
+            <label class="field-label">URL Slug (Auto-generated)</label>
+            <input type="text" id="projSlug" class="form-input" placeholder="nike-air-max-kinetic-reel" required>
+          </div>
+        </div>
+
+        <!-- Cover Image Upload (3D Globe Tile) -->
+        <div class="field-group">
+          <label class="field-label">
+            <span>2. 3D Globe Cover Thumbnail (Image) <span class="req">*Required</span></span>
+            <span id="coverDimLabel" style="color:var(--ink-dim)">Recommended: 1200×800px JPG/PNG/WebP</span>
+          </label>
+          <div class="dropzone" id="coverDropzone">
+            <input type="file" id="coverFileInput" accept="image/*" style="display:none">
+            <div class="dropzone-title">🖼️ Click or Drag & Drop Cover Image Here</div>
+            <div class="dropzone-sub">Appears directly on the interactive 3D WebGPU Globe</div>
+            <div class="progress-bar-wrap" id="coverProgressWrap">
+              <div class="progress-bar-fill" id="coverProgressFill"></div>
+            </div>
+          </div>
+          <div class="media-preview-box" id="coverPreviewBox" style="display:none;">
+            <img id="coverPreviewImg" class="media-preview-thumb" src="" alt="Cover preview">
+            <div style="flex:1; overflow:hidden;">
+              <div style="font-family:var(--font-mono); font-size:11px; color:var(--ink-muted); margin-bottom:6px;">Cover Image URL:</div>
+              <input type="text" id="projSrc" class="form-input" placeholder="/uploads/cover.jpg or https://...">
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Upload (Optional / For Videos & Motion Graphics) -->
+        <div class="field-group">
+          <label class="field-label">
+            <span>3. Main Video / Motion Reel (.MP4 / .WebM)</span>
+            <button type="button" class="action-btn" id="captureFrameBtn" style="display:none; border-color:var(--accent); color:var(--accent);">
+              📸 Use Video Frame as 3D Globe Cover
+            </button>
+          </label>
+          <div class="dropzone" id="videoDropzone">
+            <input type="file" id="videoFileInput" accept="video/mp4,video/webm,video/quicktime" style="display:none">
+            <div class="dropzone-title">🎥 Click or Drag & Drop Video File (.MP4 / .WebM / .MOV)</div>
+            <div class="dropzone-sub">Automatically streams on the 3D Globe & Project Drawer (and can auto-generate cover thumbnail!)</div>
+            <div class="progress-bar-wrap" id="videoProgressWrap">
+              <div class="progress-bar-fill" id="videoProgressFill"></div>
+            </div>
+          </div>
+          <div class="media-preview-box" id="videoPreviewBox" style="display:none;">
+            <video id="videoPreviewEl" class="media-preview-thumb" muted playsinline controls crossorigin="anonymous"></video>
+            <div style="flex:1; overflow:hidden;">
+              <div style="font-family:var(--font-mono); font-size:11px; color:var(--ink-muted); margin-bottom:6px;">Video URL (or paste direct .mp4 link):</div>
+              <input type="text" id="projVideo" class="form-input" placeholder="/uploads/video.mp4 or https://...">
+            </div>
+            <button type="button" class="action-btn delete-btn" id="clearVideoBtn">Remove</button>
+          </div>
+        </div>
+
+        <!-- Gallery Slides Upload -->
+        <div class="field-group">
+          <label class="field-label">
+            <span>4. Project Gallery Slides (Photos & Videos shown inside project drawer)</span>
+            <span style="color:var(--ink-dim)">Up to 6 slides</span>
+          </label>
+          <div class="dropzone" id="galleryDropzone" style="padding:18px;">
+            <input type="file" id="galleryFileInput" accept="image/*,video/mp4,video/webm" multiple style="display:none">
+            <div class="dropzone-title">+ Add Gallery Photos or Video Clips (Multiple allowed)</div>
+          </div>
+          <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+
+        <!-- Description & Services -->
+        <div class="field-group">
+          <label class="field-label">Project Description / Story</label>
+          <textarea id="projSummary" class="form-input" rows="3" placeholder="Describe the creative direction, editing workflow, motion design, or visual impact..."></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="field-group">
+            <label class="field-label">Services / Skills Tags (comma separated)</label>
+            <input type="text" id="projServices" class="form-input" placeholder="e.g. Video Editing, 2D Motion, Color Grading">
+          </div>
+          <div class="field-group">
+            <label class="field-label">Client Highlight / Quote (Optional)</label>
+            <input type="text" id="projQuote" class="form-input" placeholder="Optional quote or client name...">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" id="cancelModalBtn">Cancel</button>
+        <button type="submit" class="btn-primary" id="saveProjectBtn">
+          🚀 Save & Publish to 3D Globe
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast">
+    <span class="pulse-dot"></span>
+    <span id="toastMsg">Saved successfully!</span>
+  </div>
+
+  <script>
+    const PASS_KEY = 'kaustubh2026';
+    let allProjects = [];
+    let currentCategory = 'ALL';
+    let selectedEditorCategory = 'Photos';
+    let currentGallery = [];
+    let detectedWidth = 1920;
+    let detectedHeight = 1080;
+
+    // ========================================================================
+    // AUTHENTICATION
+    // ========================================================================
+    const loginGate = document.getElementById('loginGate');
+    const cmsApp = document.getElementById('cmsApp');
+    const loginForm = document.getElementById('loginForm');
+    const adminPassInput = document.getElementById('adminPassInput');
+    const loginError = document.getElementById('loginError');
+
+    function checkAuth() {
+      if (sessionStorage.getItem('kaustubh_cms_auth') === 'true' || localStorage.getItem('kaustubh_cms_auth') === 'true') {
+        loginGate.style.display = 'none';
+        cmsApp.style.display = 'flex';
+        loadProjects();
+      }
+    }
+
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (adminPassInput.value.trim() === PASS_KEY) {
+        localStorage.setItem('kaustubh_cms_auth', 'true');
+        loginError.style.display = 'none';
+        checkAuth();
+      } else {
+        loginError.style.display = 'block';
+      }
+    });
+
+    document.getElementById('logoutBtn').addEventListener('click', () => {
+      localStorage.removeItem('kaustubh_cms_auth');
+      sessionStorage.removeItem('kaustubh_cms_auth');
+      location.reload();
+    });
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      document.getElementById('toastMsg').textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 3200);
+    }
+
+    // ========================================================================
+    // FETCH & RENDER PROJECTS
+    // ========================================================================
+    async function loadProjects() {
+      try {
+        const res = await fetch('/api/projects');
+        const data = await res.json();
+        allProjects = data.projects || [];
+        updateCounts();
+        renderGrid();
+      } catch (err) {
+        console.error('Failed to load projects:', err);
+      }
+    }
+
+    function updateCounts() {
+      document.getElementById('count-ALL').textContent = allProjects.length;
+      document.getElementById('count-Photos').textContent = allProjects.filter(p => p.category === 'Photos').length;
+      document.getElementById('count-Videos').textContent = allProjects.filter(p => p.category === 'Videos').length;
+      document.getElementById('count-Motion').textContent = allProjects.filter(p => p.category === 'Motion Graphics 2D').length;
+    }
+
+    function renderGrid() {
+      const grid = document.getElementById('projectsGrid');
+      const query = document.getElementById('searchInput').value.trim().toLowerCase();
+
+      const filtered = allProjects.filter(p => {
+        const matchesCat = currentCategory === 'ALL' || p.category === currentCategory;
+        const matchesSearch = !query ||
+          (p.title || '').toLowerCase().includes(query) ||
+          (p.slug || '').toLowerCase().includes(query) ||
+          (p.summary || '').toLowerCase().includes(query);
+        return matchesCat && matchesSearch;
+      });
+
+      if (!filtered.length) {
+        grid.innerHTML = `
+          <div style="grid-column: 1/-1; text-align:center; padding:80px 20px; border:1px dashed var(--line-strong); border-radius:16px;">
+            <p style="font-family:var(--font-serif); font-size:26px; color:var(--ink); margin-bottom:10px;">No Projects Found</p>
+            <p style="font-family:var(--font-mono); font-size:12px; color:var(--ink-muted); margin-bottom:20px;">Upload a photo, video, or 2D motion graphic project to display on the 3D globe.</p>
+            <button type="button" class="btn-primary" onclick="openEditor()">+ Upload First Project</button>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map((p) => {
+        const hasVideo = !!(p.video || (p.gallery && p.gallery.some(g => g.video)));
+        const slideCount = (p.gallery || []).length || 1;
+        return `
+          <article class="project-card">
+            <div class="card-media">
+              <div class="card-badges">
+                <span class="badge-cat">${escapeHtml(p.category || 'Photos')}</span>
+                <span class="badge-media">${hasVideo ? '🎥 Video' : '🖼️ ' + slideCount + ' Slides'}</span>
+              </div>
+              <img src="${escapeHtml(p.card || p.src)}" alt="${escapeHtml(p.title)}" loading="lazy" onerror="this.src='/logo.svg'">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">${escapeHtml(p.title)}</h3>
+              <div class="card-slug">/projects/${escapeHtml(p.slug)}</div>
+              <p class="card-summary">${escapeHtml(p.summary || 'No description provided.')}</p>
+              <div class="card-actions">
+                <button type="button" class="action-btn edit-btn" onclick="openEditor('${escapeHtml(p.id)}')">✎ Edit</button>
+                <button type="button" class="action-btn" title="Move to #1 on Globe" onclick="moveToTop('${escapeHtml(p.id)}')">↑ Top</button>
+                <a href="/projects/${escapeHtml(p.slug)}" target="_blank" class="action-btn" title="Preview Live">↗</a>
+                <button type="button" class="action-btn delete-btn" title="Delete Project" onclick="deleteProject('${escapeHtml(p.id)}')">✕</button>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function escapeHtml(str) {
+      return String(str ?? '').replace(/[&<>"']/g, m => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+      }[m]));
+    }
+
+    // Category Tab Clicks
+    document.querySelectorAll('.cat-tab').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCategory = btn.dataset.cat;
+        renderGrid();
+      });
+    });
+
+    document.getElementById('searchInput').addEventListener('input', renderGrid);
+
+    // ========================================================================
+    // FILE UPLOAD HELPER WITH PROGRESS BAR
+    // ========================================================================
+    function uploadFile(file, progressWrapId, progressFillId) {
+      return new Promise((resolve, reject) => {
+        const wrap = progressWrapId ? document.getElementById(progressWrapId) : null;
+        const fill = progressFillId ? document.getElementById(progressFillId) : null;
+        if (wrap && fill) {
+          wrap.style.display = 'block';
+          fill.style.width = '0%';
+        }
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', '/api/upload', true);
+        xhr.setRequestHeader('X-File-Name', encodeURIComponent(file.name));
+        xhr.setRequestHeader('Content-Type', file.type || 'application/octet-stream');
+
+        xhr.upload.onprogress = (e) => {
+          if (e.lengthComputable && fill) {
+            const pct = Math.round((e.loaded / e.total) * 100);
+            fill.style.width = pct + '%';
+          }
+        };
+
+        xhr.onload = () => {
+          if (wrap) setTimeout(() => { wrap.style.display = 'none'; }, 500);
+          if (xhr.status >= 200 && xhr.status < 300) {
+            const res = JSON.parse(xhr.responseText);
+            resolve(res.url);
+          } else {
+            reject(new Error('Upload failed'));
+          }
+        };
+
+        xhr.onerror = () => {
+          if (wrap) wrap.style.display = 'none';
+          reject(new Error('Network error during upload'));
+        };
+
+        xhr.send(file);
+      });
+    }
+
+    // ========================================================================
+    // MODAL EDITOR & DRAG-AND-DROP HANDLERS
+    // ========================================================================
+    const editorModal = document.getElementById('editorModal');
+
+    document.getElementById('newProjectBtn').addEventListener('click', () => openEditor(null));
+    document.getElementById('closeModalBtn').addEventListener('click', closeEditor);
+    document.getElementById('cancelModalBtn').addEventListener('click', closeEditor);
+
+    // Category Selector in Modal
+    document.querySelectorAll('.cat-option').forEach(opt => {
+      opt.addEventListener('click', () => {
+        document.querySelectorAll('.cat-option').forEach(o => o.classList.remove('selected'));
+        opt.classList.add('selected');
+        selectedEditorCategory = opt.dataset.val;
+      });
+    });
+
+    // Auto-slug from title
+    document.getElementById('projTitle').addEventListener('input', (e) => {
+      if (!document.getElementById('projId').value) {
+        const slug = e.target.value.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        document.getElementById('projSlug').value = slug;
+      }
+    });
+
+    window.openEditor = function(projId = null) {
+      const p = projId ? allProjects.find(x => x.id === projId) : null;
+      document.getElementById('modalHeading').textContent = p ? `Edit: ${p.title}` : 'Upload New Work';
+      document.getElementById('projId').value = p ? p.id : '';
+      document.getElementById('projTitle').value = p ? p.title : '';
+      document.getElementById('projSlug').value = p ? p.slug : '';
+      document.getElementById('projSummary').value = p ? (p.summary || '') : '';
+      document.getElementById('projQuote').value = p ? (p.quote || '') : '';
+      document.getElementById('projServices').value = p ? (p.services || []).map(s => s.title).join(', ') : '';
+
+      selectedEditorCategory = p ? (p.category || 'Photos') : (currentCategory !== 'ALL' ? currentCategory : 'Photos');
+      document.querySelectorAll('.cat-option').forEach(o => {
+        o.classList.toggle('selected', o.dataset.val === selectedEditorCategory);
+      });
+
+      // Cover preview
+      const srcVal = p ? (p.src || '') : '';
+      document.getElementById('projSrc').value = srcVal;
+      updateCoverPreview(srcVal);
+
+      // Video preview
+      const vidVal = p ? (p.video || '') : '';
+      document.getElementById('projVideo').value = vidVal;
+      updateVideoPreview(vidVal);
+
+      detectedWidth = p?.width || 1920;
+      detectedHeight = p?.height || 1080;
+
+      // Gallery
+      currentGallery = p && Array.isArray(p.gallery) ? JSON.parse(JSON.stringify(p.gallery)) : [];
+      renderGalleryEditor();
+
+      editorModal.classList.add('open');
+    };
+
+    function closeEditor() {
+      editorModal.classList.remove('open');
+    }
+
+    function updateCoverPreview(url) {
+      const box = document.getElementById('coverPreviewBox');
+      const img = document.getElementById('coverPreviewImg');
+      if (url) {
+        box.style.display = 'flex';
+        img.src = url;
+        img.onload = () => {
+          if (img.naturalWidth && img.naturalHeight) {
+            detectedWidth = img.naturalWidth;
+            detectedHeight = img.naturalHeight;
+            document.getElementById('coverDimLabel').textContent = `Detected: ${detectedWidth}×${detectedHeight}px`;
+          }
+        };
+      } else {
+        box.style.display = 'none';
+        img.src = '';
+      }
+    }
+
+    function updateVideoPreview(url) {
+      const box = document.getElementById('videoPreviewBox');
+      const vid = document.getElementById('videoPreviewEl');
+      const capBtn = document.getElementById('captureFrameBtn');
+      if (url) {
+        box.style.display = 'flex';
+        vid.src = url;
+        capBtn.style.display = 'inline-flex';
+      } else {
+        box.style.display = 'none';
+        vid.src = '';
+        capBtn.style.display = 'none';
+      }
+    }
+
+    document.getElementById('projSrc').addEventListener('input', e => updateCoverPreview(e.target.value.trim()));
+    document.getElementById('projVideo').addEventListener('input', e => updateVideoPreview(e.target.value.trim()));
+    document.getElementById('clearVideoBtn').addEventListener('click', () => {
+      document.getElementById('projVideo').value = '';
+      updateVideoPreview('');
+    });
+
+    // Cover Dropzone
+    const coverDropzone = document.getElementById('coverDropzone');
+    const coverFileInput = document.getElementById('coverFileInput');
+    coverDropzone.addEventListener('click', () => coverFileInput.click());
+    coverDropzone.addEventListener('dragover', e => { e.preventDefault(); coverDropzone.classList.add('dragover'); });
+    coverDropzone.addEventListener('dragleave', () => coverDropzone.classList.remove('dragover'));
+    coverDropzone.addEventListener('drop', async e => {
+      e.preventDefault();
+      coverDropzone.classList.remove('dragover');
+      if (e.dataTransfer.files[0]) await handleCoverUpload(e.dataTransfer.files[0]);
+    });
+    coverFileInput.addEventListener('change', async e => {
+      if (e.target.files[0]) await handleCoverUpload(e.target.files[0]);
+    });
+
+    async function handleCoverUpload(file) {
+      try {
+        showToast('Uploading cover image...');
+        const url = await uploadFile(file, 'coverProgressWrap', 'coverProgressFill');
+        document.getElementById('projSrc').value = url;
+        updateCoverPreview(url);
+        showToast('Cover image uploaded!');
+      } catch (err) {
+        alert('Cover upload failed: ' + err.message);
+      }
+    }
+
+    // Video Dropzone
+    const videoDropzone = document.getElementById('videoDropzone');
+    const videoFileInput = document.getElementById('videoFileInput');
+    videoDropzone.addEventListener('click', () => videoFileInput.click());
+    videoDropzone.addEventListener('dragover', e => { e.preventDefault(); videoDropzone.classList.add('dragover'); });
+    videoDropzone.addEventListener('dragleave', () => videoDropzone.classList.remove('dragover'));
+    videoDropzone.addEventListener('drop', async e => {
+      e.preventDefault();
+      videoDropzone.classList.remove('dragover');
+      if (e.dataTransfer.files[0]) await handleVideoUpload(e.dataTransfer.files[0]);
+    });
+    videoFileInput.addEventListener('change', async e => {
+      if (e.target.files[0]) await handleVideoUpload(e.target.files[0]);
+    });
+
+    async function handleVideoUpload(file) {
+      try {
+        showToast('Uploading video file...');
+        const url = await uploadFile(file, 'videoProgressWrap', 'videoProgressFill');
+        document.getElementById('projVideo').value = url;
+        updateVideoPreview(url);
+        showToast('Video uploaded!');
+
+        // If no cover image is set yet, automatically capture a frame from the video!
+        if (!document.getElementById('projSrc').value) {
+          const vid = document.getElementById('videoPreviewEl');
+          vid.onloadeddata = () => {
+            vid.currentTime = Math.min(1, vid.duration / 4 || 0);
+          };
+          vid.onseeked = async () => {
+            vid.onseeked = null;
+            await captureVideoFrameAsCover();
+          };
+        }
+      } catch (err) {
+        alert('Video upload failed: ' + err.message);
+      }
+    }
+
+    // Capture Video Frame as Cover Thumbnail
+    async function captureVideoFrameAsCover() {
+      const vid = document.getElementById('videoPreviewEl');
+      if (!vid || !vid.videoWidth) return;
+      const canvas = document.createElement('canvas');
+      canvas.width = vid.videoWidth;
+      canvas.height = vid.videoHeight;
+      detectedWidth = vid.videoWidth;
+      detectedHeight = vid.videoHeight;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(vid, 0, 0, canvas.width, canvas.height);
+
+      canvas.toBlob(async (blob) => {
+        if (!blob) return;
+        const file = new File([blob], `video-cover-${Date.now()}.jpg`, { type: 'image/jpeg' });
+        const url = await uploadFile(file, 'coverProgressWrap', 'coverProgressFill');
+        document.getElementById('projSrc').value = url;
+        updateCoverPreview(url);
+        showToast('Captured video frame as 3D Globe cover!');
+      }, 'image/jpeg', 0.9);
+    }
+
+    document.getElementById('captureFrameBtn').addEventListener('click', captureVideoFrameAsCover);
+
+    // Gallery Upload
+    const galleryDropzone = document.getElementById('galleryDropzone');
+    const galleryFileInput = document.getElementById('galleryFileInput');
+    galleryDropzone.addEventListener('click', () => galleryFileInput.click());
+    galleryDropzone.addEventListener('dragover', e => { e.preventDefault(); galleryDropzone.classList.add('dragover'); });
+    galleryDropzone.addEventListener('dragleave', () => galleryDropzone.classList.remove('dragover'));
+    galleryDropzone.addEventListener('drop', async e => {
+      e.preventDefault();
+      galleryDropzone.classList.remove('dragover');
+      if (e.dataTransfer.files.length) await handleGalleryFiles(e.dataTransfer.files);
+    });
+    galleryFileInput.addEventListener('change', async e => {
+      if (e.target.files.length) await handleGalleryFiles(e.target.files);
+    });
+
+    async function handleGalleryFiles(files) {
+      for (const file of files) {
+        const isVid = file.type.startsWith('video/');
+        showToast(`Uploading ${file.name}...`);
+        const url = await uploadFile(file);
+        if (isVid) {
+          currentGallery.push({
+            src: document.getElementById('projSrc').value || '/logo.svg',
+            card: document.getElementById('projSrc').value || '/logo.svg',
+            width: 1920,
+            height: 1080,
+            alt: file.name,
+            video: url,
+            hls: null
+          });
+        } else {
+          currentGallery.push({
+            src: url,
+            card: url,
+            width: 1920,
+            height: 1080,
+            alt: file.name,
+            video: null,
+            hls: null
+          });
+        }
+        renderGalleryEditor();
+      }
+      showToast('Gallery updated!');
+    }
+
+    function renderGalleryEditor() {
+      const grid = document.getElementById('galleryGrid');
+      grid.innerHTML = currentGallery.map((g, idx) => `
+        <div class="gallery-item">
+          ${g.video
+            ? `<video src="${escapeHtml(g.video)}" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>`
+            : `<img src="${escapeHtml(g.src)}" alt="">`
+          }
+          <button type="button" class="gallery-remove" onclick="removeGallerySlide(${idx})">✕</button>
+        </div>
+      `).join('');
+    }
+
+    window.removeGallerySlide = function(idx) {
+      currentGallery.splice(idx, 1);
+      renderGalleryEditor();
+    };
+
+    // ========================================================================
+    // SAVE, REORDER & DELETE API CALLS
+    // ========================================================================
+    document.getElementById('projectForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const src = document.getElementById('projSrc').value.trim();
+      if (!src) {
+        alert('Please upload a Cover Image (or capture a frame from your video) so it can render on the 3D Globe.');
+        return;
+      }
+
+      const video = document.getElementById('projVideo').value.trim() || null;
+      const servicesRaw = document.getElementById('projServices').value.split(',').map(s => s.trim()).filter(Boolean);
+
+      const payload = {
+        id: document.getElementById('projId').value || undefined,
+        title: document.getElementById('projTitle').value.trim(),
+        slug: document.getElementById('projSlug').value.trim(),
+        category: selectedEditorCategory,
+        summary: document.getElementById('projSummary').value.trim(),
+        quote: document.getElementById('projQuote').value.trim() || null,
+        src,
+        card: src,
+        width: detectedWidth || 1920,
+        height: detectedHeight || 1080,
+        video,
+        services: servicesRaw.length ? servicesRaw : [selectedEditorCategory],
+        gallery: currentGallery.length ? currentGallery.map(g => ({
+          ...g,
+          src: g.src === '/logo.svg' ? src : g.src,
+          card: g.card === '/logo.svg' ? src : g.card
+        })) : [
+          {
+            src,
+            card: src,
+            width: detectedWidth || 1920,
+            height: detectedHeight || 1080,
+            alt: document.getElementById('projTitle').value.trim(),
+            video,
+            hls: null
+          }
+        ]
+      };
+
+      const res = await fetch('/api/projects', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (res.ok) {
+        closeEditor();
+        await loadProjects();
+        showToast('Project published to 3D Globe!');
+      } else {
+        alert('Failed to save project.');
+      }
+    });
+
+    window.moveToTop = async function(id) {
+      const res = await fetch('/api/projects/top', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id })
+      });
+      if (res.ok) {
+        await loadProjects();
+        showToast('Moved project to #1 on 3D Globe!');
+      }
+    };
+
+    window.deleteProject = async function(id) {
+      const p = allProjects.find(x => x.id === id);
+      if (!confirm(`Delete "${p?.title || 'this project'}" from the portfolio?`)) return;
+      const res = await fetch(`/api/projects/${encodeURIComponent(id)}`, { method: 'DELETE' });
+      if (res.ok) {
+        await loadProjects();
+        showToast('Project deleted.');
+      }
+    };
+
+    checkAuth();
+  </script>
+</body>
+</html>
